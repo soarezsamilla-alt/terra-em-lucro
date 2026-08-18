@@ -1,24 +1,55 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { AntesDepois } from "@/components/rural/AntesDepois";
+import { Beneficios } from "@/components/rural/Beneficios";
+import { Bonus } from "@/components/rural/Bonus";
+import { ComoFunciona } from "@/components/rural/ComoFunciona";
+import { Depoimentos } from "@/components/rural/Depoimentos";
+import { ExitIntentPopup } from "@/components/rural/ExitIntentPopup";
+import { Faq, Garantia, Rodape } from "@/components/rural/GarantiaFaqRodape";
+import { Hero } from "@/components/rural/Hero";
+import { Instagram } from "@/components/rural/Instagram";
+import { Precos } from "@/components/rural/Precos";
+import { Produto } from "@/components/rural/Produto";
+import { ProvaVisual } from "@/components/rural/ProvaVisual";
+import { StickyCta } from "@/components/rural/StickyCta";
+
+const TITULO = "Rural Planner — +100 Projetos de Sítios e Chácaras Produtivas";
+const DESCRICAO =
+  "+100 projetos profissionais de sítios e chácaras com medidas reais e layouts prontos para executar. Acesso imediato no WhatsApp por R$ 9,90.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITULO },
+      { name: "description", content: DESCRICAO },
+      { property: "og:title", content: TITULO },
+      { property: "og:description", content: DESCRICAO },
+      { property: "og:type", content: "product" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen bg-background">
+      <Hero />
+      <Beneficios />
+      <ProvaVisual />
+      <AntesDepois />
+      <Produto />
+      <Bonus />
+      <ComoFunciona />
+      <Depoimentos />
+      <Precos />
+      <Instagram />
+      <Garantia />
+      <Faq />
+      <Rodape />
+      <StickyCta />
+      <ExitIntentPopup />
+    </main>
   );
 }
