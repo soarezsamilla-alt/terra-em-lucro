@@ -80,14 +80,18 @@ export function Precos() {
             <div className="mt-2">
               <Contador />
             </div>
-            <h3 className="mt-4 font-display text-lg font-extrabold uppercase">Plano Completo</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              de <span className="line-through">{PRECOS.completoDe}</span> por:
-            </p>
-            <p className="font-display text-4xl font-extrabold text-accent">{PRECOS.completoPor}</p>
-            <p className="mt-2 inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-bold uppercase text-primary">
-              Melhor opção — Completo
-            </p>
+            <div className="text-center">
+              <h3 className="mt-4 font-display text-lg font-extrabold uppercase">Plano Completo</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                de <span className="line-through">{PRECOS.completoDe}</span> por:
+              </p>
+              <p className="font-display text-4xl font-extrabold text-accent">
+                {PRECOS.completoPor}
+              </p>
+              <p className="mt-2 inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-bold uppercase text-primary">
+                Melhor opção — Completo
+              </p>
+            </div>
             <img
               src={heroMockup.url}
               alt="Mockup do Plano Completo Rural Planner com todos os bônus"
