@@ -67,7 +67,7 @@ export function Precos() {
                 </li>
               ))}
             </ul>
-            <Button asChild variant="ctaGreen" size="xl" className="mt-6 w-full">
+            <Button asChild variant="ctaGreen" size="xl" className="mt-6 h-12 w-full animate-cta-pulse px-5 text-sm sm:text-base">
               <a href={CHECKOUT_BASICO_URL}>QUERO O BÁSICO</a>
             </Button>
           </article>
@@ -112,7 +112,7 @@ export function Precos() {
 
               ))}
             </ul>
-            <Button asChild variant="cta" size="xl" className="mt-5 w-full">
+            <Button asChild variant="cta" size="xl" className="mt-5 h-12 w-full animate-cta-pulse px-5 text-sm sm:text-base">
               <a href={CHECKOUT_COMPLETO_URL}>Quero o Plano Completo</a>
             </Button>
 

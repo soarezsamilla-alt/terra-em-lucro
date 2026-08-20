@@ -204,8 +204,24 @@
   animation: soft-pulse 3s ease-in-out infinite;
 }
 
+@keyframes cta-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@utility animate-cta-pulse {
+  animation: cta-pulse 2.4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .animate-soft-pulse {
+  .animate-soft-pulse,
+  .animate-cta-pulse {
     animation: none;
   }
 }
+
