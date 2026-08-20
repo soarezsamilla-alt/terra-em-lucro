@@ -53,7 +53,7 @@ export function Bonus() {
           </p>
         </div>
 
-        <Button asChild variant="cta" size="xl" className="mt-6 h-12 w-full max-w-md animate-cta-pulse px-5 text-sm sm:text-base">
+        <Button asChild variant="cta" size="xl" className="mt-6 h-10 w-full max-w-xs animate-cta-pulse px-4 text-xs sm:text-sm">
           <a href="#precos">{PRECOS.ctaPrincipal}</a>
         </Button>
       </div>
