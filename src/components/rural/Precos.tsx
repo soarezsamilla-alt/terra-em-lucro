@@ -1,4 +1,4 @@
-import kitMockup from "@/assets/kit-mockup.jpg";
+import basicoMockup from "@/assets/plano-basico-mockup.png.asset.json";
 import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { Contador } from "@/components/rural/Contador";
@@ -44,10 +44,10 @@ export function Precos() {
             <p className="font-display text-4xl font-extrabold text-primary">{PRECOS.basicoPor}</p>
             <p className="text-xs text-muted-foreground">pagamento único</p>
             <img
-              src={kitMockup}
+              src={basicoMockup.url}
               alt="Mockup do Plano Básico Rural Planner"
-              width={1024}
-              height={768}
+              width={1536}
+              height={1024}
               loading="lazy"
               className="mt-4 w-full rounded-xl"
             />
