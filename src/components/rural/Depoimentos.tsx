@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
@@ -5,39 +7,48 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { DEPOIMENTOS } from "@/lib/rural-config";
-import { Quote, Star } from "lucide-react";
+import dep01 from "@/assets/depoimentos/dep-01.png.asset.json";
+import dep02 from "@/assets/depoimentos/dep-02.png.asset.json";
+import dep03 from "@/assets/depoimentos/dep-03.png.asset.json";
+import dep04 from "@/assets/depoimentos/dep-04.png.asset.json";
+import dep05 from "@/assets/depoimentos/dep-05.png.asset.json";
+
+const DEPOIMENTOS_IMG: readonly string[] = [
+  dep01.url,
+  dep02.url,
+  dep03.url,
+  dep04.url,
+  dep05.url,
+];
 
 export function Depoimentos() {
+  const autoplay = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: true }),
+  );
+
   return (
     <section className="bg-secondary px-4 py-14">
       <div className="mx-auto max-w-5xl">
         <h2 className="text-center text-2xl sm:text-3xl">QUEM JÁ USOU, APROVOU</h2>
 
-        <Carousel opts={{ align: "start", loop: true }} className="mt-8">
+        <Carousel
+          opts={{ align: "start", loop: true }}
+          plugins={[autoplay.current]}
+          className="mt-8"
+        >
           <CarouselContent>
-            {DEPOIMENTOS.map((depoimento) => (
-              <CarouselItem key={depoimento.nome} className="sm:basis-1/2 lg:basis-1/3">
-                <article className="flex h-full flex-col rounded-2xl border border-border bg-card p-5 shadow-card">
-                  <Quote className="size-5 shrink-0 text-accent" aria-hidden />
-                  <p className="mt-3 flex-1 text-sm text-muted-foreground">“{depoimento.texto}”</p>
-                  <div className="mt-4 flex items-center gap-3 border-t border-border pt-4">
-                    <div className="grid size-10 shrink-0 place-items-center rounded-full bg-gradient-leaf font-display text-sm font-extrabold text-primary-foreground">
-                      {depoimento.nome.charAt(0)}
-                    </div>
-                    <div className="min-w-0">
-                      <p className="truncate font-display text-sm font-extrabold">
-                        {depoimento.nome}
-                      </p>
-                      <p className="truncate text-xs text-muted-foreground">{depoimento.local}</p>
-                    </div>
-                    <div className="ml-auto flex shrink-0 gap-0.5" aria-label="5 de 5 estrelas">
-                      {Array.from({ length: 5 }).map((_, index) => (
-                        <Star key={index} className="size-3 fill-accent text-accent" aria-hidden />
-                      ))}
-                    </div>
-                  </div>
-                </article>
+            {DEPOIMENTOS_IMG.map((src, i) => (
+              <CarouselItem key={src} className="basis-4/5 sm:basis-1/2 lg:basis-1/3">
+                <figure className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
+                  <img
+                    src={src}
+                    alt={`Depoimento de cliente ${i + 1}`}
+                    width={768}
+                    height={1376}
+                    loading="lazy"
+                    className="w-full object-contain"
+                  />
+                </figure>
               </CarouselItem>
             ))}
           </CarouselContent>
