@@ -40,42 +40,42 @@ export function Produto() {
           Acesso imediato
         </span>
 
-        <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card text-left shadow-card">
+        <div className="mx-auto mt-6 max-w-md overflow-hidden rounded-2xl border border-border bg-card text-left shadow-card">
           <img
             src={produtoMockup.url}
             alt="Kit completo Rural Planner com mais de 100 projetos"
             width={1007}
             height={1260}
             loading="lazy"
-            className="mx-auto w-full max-w-[320px] object-contain"
+            className="mx-auto w-full max-w-[240px] object-contain"
           />
-
-          <div className="p-6">
-            <span className="rounded-md bg-accent px-2 py-1 font-display text-[11px] font-extrabold uppercase text-accent-foreground">
+          <div className="px-4 pb-5 pt-1">
+            <span className="rounded-md bg-accent px-2 py-0.5 font-display text-[10px] font-extrabold uppercase text-accent-foreground">
               Item 01
             </span>
-            <h2 className="mt-3 text-xl sm:text-2xl">
+            <h2 className="mt-2 text-lg sm:text-xl">
               +100 Projetos de Sítios e Chácaras Produtivas
             </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
+            <p className="mt-1 text-xs text-muted-foreground">
               O guia prático para transformar sua terra em um negócio lucrativo.
             </p>
 
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-4 space-y-2.5">
               {ITENS.map(({ icone: Icone, titulo, texto }) => (
-                <li key={titulo} className="flex gap-3">
-                  <div className="grid size-9 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
-                    <Icone className="size-4" aria-hidden />
+                <li key={titulo} className="flex gap-2.5">
+                  <div className="grid size-7 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
+                    <Icone className="size-3.5" aria-hidden />
                   </div>
                   <div className="min-w-0">
-                    <p className="font-display text-sm font-extrabold">{titulo}</p>
-                    <p className="text-sm text-muted-foreground">{texto}</p>
+                    <p className="font-display text-xs font-extrabold">{titulo}</p>
+                    <p className="text-xs text-muted-foreground">{texto}</p>
                   </div>
                 </li>
               ))}
             </ul>
           </div>
         </div>
+
 
         <p className="mt-8 font-display text-lg font-extrabold uppercase text-accent">
           + 6 bônus exclusivos abaixo 👇
