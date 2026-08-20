@@ -46,7 +46,7 @@ export function Hero() {
             alt="Mockup do kit digital Rural Planner com projetos de sítios e chácaras"
             width={1536}
             height={1024}
-            className="mx-auto mt-7 w-full max-w-xl rounded-2xl shadow-card"
+            className="animate-soft-pulse mx-auto mt-7 w-full max-w-xl"
           />
 
           <p className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold text-primary">
