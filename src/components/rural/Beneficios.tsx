@@ -37,21 +37,22 @@ export function Beneficios() {
           Chega de improvisar, aqui você executa com clareza
         </p>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="mx-auto mt-6 grid max-w-md grid-cols-1 gap-3 md:max-w-5xl md:grid-cols-2">
           {CARDS.map(({ icone: Icone, titulo, texto }) => (
-            <Card key={titulo} className="flex gap-4 border-border bg-card p-5 shadow-card">
-              <div className="grid size-11 shrink-0 place-items-center rounded-xl bg-gradient-leaf text-primary-foreground">
-                <Icone className="size-5" aria-hidden />
+            <Card key={titulo} className="flex gap-3 border-border bg-card p-3.5 shadow-card">
+              <div className="grid size-9 shrink-0 place-items-center rounded-xl bg-gradient-leaf text-primary-foreground">
+                <Icone className="size-4" aria-hidden />
               </div>
               <div className="min-w-0">
-                <h3 className="font-display text-sm font-extrabold uppercase tracking-tight">
+                <h3 className="font-display text-xs font-extrabold uppercase tracking-tight">
                   {titulo}
                 </h3>
-                <p className="mt-1.5 text-sm text-muted-foreground">{texto}</p>
+                <p className="mt-1 text-xs text-muted-foreground">{texto}</p>
               </div>
             </Card>
           ))}
         </div>
+
       </div>
     </section>
   );
