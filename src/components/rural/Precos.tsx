@@ -105,10 +105,11 @@ export function Precos() {
             </p>
             <ul className="mt-3 space-y-1.5">
               {BULLETS_COMPLETO.map((texto) => (
-                <li key={texto} className="flex gap-2 text-sm leading-snug text-muted-foreground">
-                  <Check className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
+                <li key={texto} className="flex gap-2 text-xs leading-snug text-muted-foreground">
+                  <Check className="mt-0.5 size-3.5 shrink-0 text-primary" aria-hidden />
                   {texto}
                 </li>
+
               ))}
             </ul>
             <Button asChild variant="cta" size="xl" className="mt-5 w-full">
