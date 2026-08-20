@@ -1,5 +1,5 @@
 import kitMockup from "@/assets/kit-mockup.jpg";
-import sitio from "@/assets/sitio-produtivo.jpg";
+import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { Contador } from "@/components/rural/Contador";
 import { CHECKOUT_BASICO_URL, CHECKOUT_COMPLETO_URL, PRECOS } from "@/lib/rural-config";
@@ -85,10 +85,10 @@ export function Precos() {
               Melhor opção — Completo
             </p>
             <img
-              src={sitio}
+              src={heroMockup.url}
               alt="Mockup do Plano Completo Rural Planner com todos os bônus"
-              width={1024}
-              height={768}
+              width={1536}
+              height={1024}
               loading="lazy"
               className="mt-4 w-full rounded-xl"
             />
