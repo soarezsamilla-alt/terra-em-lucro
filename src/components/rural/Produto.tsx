@@ -47,8 +47,9 @@ export function Produto() {
             width={1007}
             height={1260}
             loading="lazy"
-            className="w-full object-cover"
+            className="mx-auto w-full max-w-[200px] object-contain"
           />
+
           <div className="p-6">
             <span className="rounded-md bg-accent px-2 py-1 font-display text-[11px] font-extrabold uppercase text-accent-foreground">
               Item 01
