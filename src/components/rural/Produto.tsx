@@ -36,7 +36,7 @@ export function Produto() {
         <span className="inline-block rounded-full bg-secondary px-3 py-1 text-[11px] font-bold uppercase text-secondary-foreground">
           Tudo isso está incluso no seu kit
         </span>
-        <span className="ml-2 inline-block rounded-full bg-primary px-3 py-1 text-[11px] font-bold uppercase text-primary-foreground">
+        <span className="ml-4 inline-block rounded-full bg-primary px-3 py-1 text-[11px] font-bold uppercase text-primary-foreground">
           Acesso imediato
         </span>
 
