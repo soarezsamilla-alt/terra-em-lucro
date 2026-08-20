@@ -61,7 +61,7 @@ export function ProvaVisual() {
         <Carousel opts={{ align: "start", loop: true }} className="mt-8">
           <CarouselContent>
             {AMOSTRAS.map((src, i) => (
-              <CarouselItem key={src} className="basis-full sm:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={src} className="basis-4/5 sm:basis-1/2 lg:basis-1/3">
                 <figure className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
                   <img
                     src={src}
