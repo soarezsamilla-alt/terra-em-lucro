@@ -47,7 +47,7 @@ export function Produto() {
             width={1007}
             height={1260}
             loading="lazy"
-            className="mx-auto w-full max-w-[200px] object-contain"
+            className="mx-auto w-full max-w-[320px] object-contain"
           />
 
           <div className="p-6">
