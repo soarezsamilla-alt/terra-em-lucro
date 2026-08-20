@@ -73,7 +73,7 @@ export function Precos() {
           </article>
 
           {/* Plano Completo */}
-          <article className="relative rounded-2xl border-2 border-accent bg-card p-6 text-left shadow-cta">
+          <article className="relative rounded-2xl border-2 border-accent bg-card p-5 text-left shadow-cta">
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-sun px-3 py-1 text-[11px] font-bold uppercase text-accent-foreground">
               Mais Vendido
             </span>
@@ -81,14 +81,14 @@ export function Precos() {
               <Contador />
             </div>
             <div className="text-center">
-              <h3 className="mt-4 font-display text-lg font-extrabold uppercase">Plano Completo</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <h3 className="mt-3 font-display text-lg font-extrabold uppercase">Plano Completo</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
                 de <span className="line-through">{PRECOS.completoDe}</span> por:
               </p>
               <p className="font-display text-4xl font-extrabold text-accent">
                 {PRECOS.completoPor}
               </p>
-              <p className="mt-2 inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-bold uppercase text-primary">
+              <p className="mt-1 inline-block rounded-full bg-primary/10 px-2.5 py-0.5 text-[11px] font-bold uppercase text-primary">
                 Melhor opção — Completo
               </p>
             </div>
@@ -98,22 +98,23 @@ export function Precos() {
               width={1536}
               height={1024}
               loading="lazy"
-              className="mt-4 w-full rounded-xl"
+              className="mx-auto mt-3 w-full max-w-[300px] rounded-xl"
             />
-            <p className="mt-4 inline-block rounded-full bg-accent px-3 py-1 text-[11px] font-bold uppercase text-accent-foreground">
+            <p className="mt-3 inline-block rounded-full bg-accent px-3 py-1 text-[11px] font-bold uppercase text-accent-foreground">
               Todos os Bônus Inclusos
             </p>
-            <ul className="mt-4 space-y-2">
+            <ul className="mt-3 space-y-1.5">
               {BULLETS_COMPLETO.map((texto) => (
-                <li key={texto} className="flex gap-2 text-sm text-muted-foreground">
+                <li key={texto} className="flex gap-2 text-sm leading-snug text-muted-foreground">
                   <Check className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden />
                   {texto}
                 </li>
               ))}
             </ul>
-            <Button asChild variant="cta" size="xl" className="mt-6 w-full">
+            <Button asChild variant="cta" size="xl" className="mt-5 w-full">
               <a href={CHECKOUT_COMPLETO_URL}>Quero o Plano Completo</a>
             </Button>
+
           </article>
         </div>
 
