@@ -12,7 +12,6 @@ import { Instagram } from "@/components/rural/Instagram";
 import { Precos } from "@/components/rural/Precos";
 import { Produto } from "@/components/rural/Produto";
 import { ProvaVisual } from "@/components/rural/ProvaVisual";
-import { StickyCta } from "@/components/rural/StickyCta";
 
 const TITULO = "Rural Planner — +100 Projetos de Sítios e Chácaras Produtivas";
 const DESCRICAO =
@@ -48,7 +47,6 @@ function Index() {
       <Garantia />
       <Faq />
       <Rodape />
-      <StickyCta />
       
     </main>
   );
