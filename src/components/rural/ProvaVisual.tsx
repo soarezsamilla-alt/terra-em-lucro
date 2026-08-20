@@ -50,6 +50,10 @@ const AMOSTRAS: readonly string[] = [
 ];
 
 export function ProvaVisual() {
+  const autoplay = useRef(
+    Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }),
+  );
+
   return (
     <section className="bg-secondary px-4 py-14">
       <div className="mx-auto max-w-5xl">
