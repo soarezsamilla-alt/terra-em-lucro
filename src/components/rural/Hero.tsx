@@ -1,4 +1,4 @@
-import kitMockup from "@/assets/kit-mockup.jpg";
+import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { PRECOS } from "@/lib/rural-config";
 import { BellRing, MessageCircle, ShieldCheck } from "lucide-react";
@@ -42,10 +42,10 @@ export function Hero() {
           </p>
 
           <img
-            src={kitMockup}
+            src={heroMockup.url}
             alt="Mockup do kit digital Rural Planner com projetos de sítios e chácaras"
-            width={1024}
-            height={768}
+            width={1536}
+            height={1024}
             className="mx-auto mt-7 w-full max-w-xl rounded-2xl shadow-card"
           />
 
