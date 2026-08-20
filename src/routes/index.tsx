@@ -5,7 +5,7 @@ import { Beneficios } from "@/components/rural/Beneficios";
 import { Bonus } from "@/components/rural/Bonus";
 import { ComoFunciona } from "@/components/rural/ComoFunciona";
 import { Depoimentos } from "@/components/rural/Depoimentos";
-import { ExitIntentPopup } from "@/components/rural/ExitIntentPopup";
+
 import { Faq, Garantia, Rodape } from "@/components/rural/GarantiaFaqRodape";
 import { Hero } from "@/components/rural/Hero";
 import { Instagram } from "@/components/rural/Instagram";
@@ -49,7 +49,7 @@ function Index() {
       <Faq />
       <Rodape />
       <StickyCta />
-      <ExitIntentPopup />
+      
     </main>
   );
 }
