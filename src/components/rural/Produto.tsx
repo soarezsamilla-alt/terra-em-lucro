@@ -1,4 +1,4 @@
-import kitMockup from "@/assets/kit-mockup.jpg";
+import produtoMockup from "@/assets/produto-mockup.png.asset.json";
 import { Ruler, LayoutGrid, FileCheck2, Infinity as InfinityIcon, RefreshCw } from "lucide-react";
 
 const ITENS = [
@@ -42,10 +42,10 @@ export function Produto() {
 
         <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card text-left shadow-card">
           <img
-            src={kitMockup}
+            src={produtoMockup.url}
             alt="Kit completo Rural Planner com mais de 100 projetos"
-            width={1024}
-            height={768}
+            width={1007}
+            height={1260}
             loading="lazy"
             className="w-full object-cover"
           />
