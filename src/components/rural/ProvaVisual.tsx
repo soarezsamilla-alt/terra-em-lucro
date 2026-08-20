@@ -41,7 +41,7 @@ export function ProvaVisual() {
 
         <Carousel opts={{ align: "start", loop: true }} className="mt-8">
           <CarouselContent>
-            {AMOSTRAS.map((legenda, index) => (
+            {AMOSTRAS.map((legenda) => (
               <CarouselItem key={legenda} className="basis-1/2 sm:basis-1/3 lg:basis-1/4">
                 <figure className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
                   <img
@@ -52,10 +52,6 @@ export function ProvaVisual() {
                     loading="lazy"
                     className="aspect-[4/5] w-full object-cover"
                   />
-                  <figcaption className="px-3 py-2 text-[11px] font-semibold text-muted-foreground">
-                    <span className="text-primary">#{String(index + 1).padStart(2, "0")}</span>{" "}
-                    {legenda}
-                  </figcaption>
                 </figure>
               </CarouselItem>
             ))}
