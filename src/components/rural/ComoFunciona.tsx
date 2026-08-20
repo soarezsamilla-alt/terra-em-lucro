@@ -28,27 +28,28 @@ export function ComoFunciona() {
   return (
     <section className="px-4 py-14">
       <div className="mx-auto max-w-5xl text-center">
-        <h2 className="text-2xl sm:text-3xl">Comece a organizar sua terra em minutos</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <h2 className="text-xl sm:text-2xl">Comece a organizar sua terra em minutos</h2>
+        <p className="mt-1.5 text-xs text-muted-foreground">
           Veja como é simples ter acesso ao seu planejamento completo
         </p>
 
-        <ol className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-4">
+        <ol className="mx-auto mt-7 grid max-w-md grid-cols-1 gap-5 md:max-w-5xl md:grid-cols-4">
           {PASSOS.map(({ icone: Icone, titulo, texto }, index) => (
             <li key={titulo} className="flex flex-col items-center text-center">
               <div className="relative">
-                <div className="grid size-20 place-items-center rounded-full bg-primary/10 text-primary">
-                  <Icone className="size-8" aria-hidden />
+                <div className="grid size-14 place-items-center rounded-full bg-primary/10 text-primary">
+                  <Icone className="size-6" aria-hidden />
                 </div>
-                <span className="absolute -right-1 -top-1 grid size-8 place-items-center rounded-full bg-gradient-sun font-display text-sm font-extrabold text-accent-foreground">
+                <span className="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-gradient-sun font-display text-xs font-extrabold text-accent-foreground">
                   {index + 1}
                 </span>
               </div>
-              <h3 className="mt-4 font-display text-base font-extrabold">{titulo}</h3>
-              <p className="mt-1.5 text-sm text-muted-foreground">{texto}</p>
+              <h3 className="mt-3 font-display text-sm font-extrabold">{titulo}</h3>
+              <p className="mt-1 text-xs text-muted-foreground">{texto}</p>
             </li>
           ))}
         </ol>
+
       </div>
     </section>
   );
