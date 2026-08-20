@@ -37,12 +37,16 @@ export function Precos() {
         <div className="mt-8 grid grid-cols-1 items-start gap-6 md:grid-cols-2">
           {/* Plano Básico */}
           <article className="rounded-2xl border border-border bg-card p-6 text-left shadow-card">
-            <h3 className="font-display text-lg font-extrabold uppercase">Plano Básico</h3>
-            <p className="mt-2 text-sm text-muted-foreground">
-              de <span className="line-through">{PRECOS.basicoDe}</span> por:
-            </p>
-            <p className="font-display text-4xl font-extrabold text-primary">{PRECOS.basicoPor}</p>
-            <p className="text-xs text-muted-foreground">pagamento único</p>
+            <div className="text-center">
+              <h3 className="font-display text-lg font-extrabold uppercase">Plano Básico</h3>
+              <p className="mt-2 text-sm text-muted-foreground">
+                de <span className="line-through">{PRECOS.basicoDe}</span> por:
+              </p>
+              <p className="font-display text-4xl font-extrabold text-primary">
+                {PRECOS.basicoPor}
+              </p>
+              <p className="text-xs text-muted-foreground">pagamento único</p>
+            </div>
             <img
               src={basicoMockup.url}
               alt="Mockup do Plano Básico Rural Planner"
