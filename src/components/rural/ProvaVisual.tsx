@@ -64,7 +64,11 @@ export function ProvaVisual() {
           +100 plantas profissionais com medidas reais, prontas para aplicar.
         </p>
 
-        <Carousel opts={{ align: "start", loop: true }} className="mt-8">
+        <Carousel
+          opts={{ align: "start", loop: true }}
+          plugins={[autoplay.current]}
+          className="mt-8"
+        >
           <CarouselContent>
             {AMOSTRAS.map((src, i) => (
               <CarouselItem key={src} className="basis-4/5 sm:basis-1/2 lg:basis-1/3">
