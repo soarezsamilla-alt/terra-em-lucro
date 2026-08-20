@@ -54,7 +54,7 @@ export function Hero() {
             Receba tudo na hora no seu WhatsApp e e-mail
           </p>
 
-          <Button asChild variant="cta" size="xl" className="mt-6 w-full max-w-md">
+          <Button asChild variant="cta" size="xl" className="mt-6 h-12 w-full max-w-md animate-cta-pulse px-5 text-sm sm:text-base">
             <a href="#precos">{PRECOS.ctaPrincipal}</a>
           </Button>
 
