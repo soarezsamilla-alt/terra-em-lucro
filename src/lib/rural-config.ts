@@ -29,10 +29,18 @@ export const PRECOS = {
   completoPor: "R$29,90",
   ctaPrincipal: "QUERO MEU PROJETO POR R$ 9,90",
   bonusTotal: "R$205,50",
+  /** Preço promocional do upsell exibido ao clicar no Plano Básico. */
+  upsellPor: "R$19,90",
 } as const;
 
 /** Duração do contador regressivo da oferta, em segundos (24h). */
 export const CONTADOR_SEGUNDOS = 24 * 60 * 60;
+
+/** Checkout do upsell (Plano Completo com desconto). */
+export const CHECKOUT_UPSELL_URL = CHECKOUT_COMPLETO_URL;
+
+/** Duração do cronômetro do upsell, em segundos (15 min). */
+export const UPSELL_DURACAO_SEGUNDOS = 15 * 60;
 
 export const BONUS: readonly Bonus[] = [
   {

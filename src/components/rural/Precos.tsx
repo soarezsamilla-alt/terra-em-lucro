@@ -1,8 +1,10 @@
+import { useState } from "react";
 import basicoMockup from "@/assets/plano-basico-mockup.png.asset.json";
 import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { Contador } from "@/components/rural/Contador";
-import { CHECKOUT_BASICO_URL, CHECKOUT_COMPLETO_URL, PRECOS } from "@/lib/rural-config";
+import { UpsellDialog } from "@/components/rural/UpsellDialog";
+import { CHECKOUT_COMPLETO_URL, PRECOS } from "@/lib/rural-config";
 import { Check, X } from "lucide-react";
 
 const BULLETS_BASICO = [
@@ -26,6 +28,8 @@ const BULLETS_COMPLETO = [
 ] as const;
 
 export function Precos() {
+  const [upsellAberto, setUpsellAberto] = useState(false);
+
   return (
     <section id="precos" className="scroll-mt-4 px-4 py-14">
       <div className="mx-auto max-w-5xl text-center">
@@ -67,8 +71,13 @@ export function Precos() {
                 </li>
               ))}
             </ul>
-            <Button asChild variant="ctaGreen" size="xl" className="mt-6 h-10 w-full animate-cta-pulse px-4 text-xs sm:text-sm">
-              <a href={CHECKOUT_BASICO_URL}>QUERO O BÁSICO</a>
+            <Button
+              variant="ctaGreen"
+              size="xl"
+              className="mt-6 h-10 w-full animate-cta-pulse px-4 text-xs sm:text-sm"
+              onClick={() => setUpsellAberto(true)}
+            >
+              QUERO O BÁSICO
             </Button>
           </article>
 
@@ -125,6 +134,8 @@ export function Precos() {
         </p>
         <p className="mt-2 text-xs text-muted-foreground">7 dias de garantia incondicional</p>
       </div>
+
+      <UpsellDialog open={upsellAberto} onOpenChange={setUpsellAberto} />
     </section>
   );
 }
