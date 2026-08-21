@@ -78,7 +78,7 @@ export function Instagram() {
           <Button
             asChild
             variant="ctaGreen"
-            className="mt-5 h-10 w-full px-4 text-xs animate-cta-pulse [&_svg]:size-4"
+            className="mx-auto mt-5 h-8 w-auto max-w-full px-3 text-[11px] animate-cta-pulse [&_svg]:size-3.5"
           >
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
               <InstagramIcon aria-hidden />
