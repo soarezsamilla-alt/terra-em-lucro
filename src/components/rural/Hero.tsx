@@ -62,7 +62,7 @@ export function Hero() {
   return (
     <>
       {/* 1. Notificação de prova social — visitantes ao vivo */}
-      <div className="bg-earth px-4 py-2.5 text-earth-foreground">
+      <div className="sticky top-0 z-50 bg-earth px-4 py-2.5 text-earth-foreground shadow-sm">
         <div className="mx-auto flex max-w-3xl items-center justify-center gap-2">
           <span className="relative flex size-2 shrink-0">
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
