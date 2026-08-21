@@ -40,6 +40,7 @@ function Index() {
       <AntesDepois />
       <Produto />
       <Bonus />
+      <ProvaVisual />
       <ComoFunciona />
       <Depoimentos />
       <Precos />
