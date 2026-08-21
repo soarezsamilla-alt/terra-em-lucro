@@ -1,4 +1,4 @@
-import produtoMockup from "@/assets/produto-mockup.png.asset.json";
+import produtoMockup from "@/assets/produto-mockup.png";
 import { Ruler, LayoutGrid, FileCheck2, Infinity as InfinityIcon, RefreshCw } from "lucide-react";
 
 const ITENS = [
@@ -44,7 +44,7 @@ export function Produto() {
             </h2>
           </div>
           <img
-            src={produtoMockup.url}
+            src={produtoMockup}
             alt="Kit completo Rural Planner com mais de 100 projetos"
             width={1007}
             height={1260}

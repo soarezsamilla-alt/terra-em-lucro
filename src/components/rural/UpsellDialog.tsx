@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import heroMockup from "@/assets/hero-mockup.png.asset.json";
+import heroMockup from "@/assets/hero-mockup.png";
 import {
   CHECKOUT_UPSELL_RECUSA_URL,
   CHECKOUT_UPSELL_URL,
@@ -68,7 +68,7 @@ export function UpsellDialog({ open, onOpenChange }: UpsellDialogProps) {
         </DialogHeader>
 
         <img
-          src={heroMockup.url}
+          src={heroMockup}
           alt="Mockup do Plano Completo Rural Planner com todos os bônus"
           width={1536}
           height={1024}
