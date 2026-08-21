@@ -35,6 +35,14 @@ export function Produto() {
       <div className="mx-auto max-w-4xl text-center">
 
         <div className="mx-auto mt-6 max-w-md overflow-hidden rounded-2xl border border-border bg-card text-left shadow-card">
+          <div className="px-4 pt-5 text-center">
+            <span className="rounded-md bg-accent px-2 py-0.5 font-display text-[10px] font-extrabold uppercase text-accent-foreground">
+              Item 01
+            </span>
+            <h2 className="mt-2 text-lg sm:text-xl">
+              +100 Projetos de Sítios e Chácaras Produtivas
+            </h2>
+          </div>
           <img
             src={produtoMockup.url}
             alt="Kit completo Rural Planner com mais de 100 projetos"
@@ -44,12 +52,7 @@ export function Produto() {
             className="mx-auto w-full max-w-[240px] object-contain"
           />
           <div className="px-4 pb-5 pt-1">
-            <span className="rounded-md bg-accent px-2 py-0.5 font-display text-[10px] font-extrabold uppercase text-accent-foreground">
-              Item 01
-            </span>
-            <h2 className="mt-2 text-lg sm:text-xl">
-              +100 Projetos de Sítios e Chácaras Produtivas
-            </h2>
+
             <p className="mt-1 text-xs text-muted-foreground">
               O guia prático para transformar sua terra em um negócio lucrativo.
             </p>
