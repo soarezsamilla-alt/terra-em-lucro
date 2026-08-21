@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import {
-  CHECKOUT_BASICO_URL,
+  CHECKOUT_UPSELL_RECUSA_URL,
   CHECKOUT_UPSELL_URL,
   PRECOS,
   UPSELL_DURACAO_SEGUNDOS,
@@ -110,7 +110,7 @@ export function UpsellDialog({ open, onOpenChange }: UpsellDialogProps) {
         </Button>
 
         <a
-          href={CHECKOUT_BASICO_URL}
+          href={CHECKOUT_UPSELL_RECUSA_URL}
           className="mt-2 block text-[10px] text-muted-foreground underline underline-offset-2"
         >
           Não, prefiro continuar sem os bônus
