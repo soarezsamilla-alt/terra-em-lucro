@@ -2,13 +2,24 @@ import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { PRECOS } from "@/lib/rural-config";
 import { BellRing, MessageCircle, ShieldCheck } from "lucide-react";
+import { useEffect, useState } from "react";
 
-function dataOferta(): string {
-  const hoje = new Date();
-  return hoje.toLocaleDateString("pt-BR", { day: "2-digit", month: "long" });
+/** Data calculada apenas no cliente para evitar divergência de fuso entre SSR e browser. */
+function useDataOferta(): string {
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    setData(
+      new Date().toLocaleDateString("pt-BR", { day: "2-digit", month: "long" }),
+    );
+  }, []);
+
+  return data;
 }
 
 export function Hero() {
+  const dataOferta = useDataOferta();
+
   return (
     <>
       {/* 1. Notificação de prova social */}
@@ -26,7 +37,7 @@ export function Hero() {
         <div className="mx-auto max-w-3xl text-center">
           {/* 2. Selo de urgência */}
           <p className="inline-block rounded-full bg-accent/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-accent">
-            Oferta disponível até o dia, {dataOferta()}
+            Oferta disponível até o dia, {dataOferta}
           </p>
 
           {/* 3. Hero */}
