@@ -1,7 +1,7 @@
 import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { PRECOS } from "@/lib/rural-config";
-import { BellRing, MessageCircle, ShieldCheck } from "lucide-react";
+import { MessageCircle, ShieldCheck, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 
 /** Data calculada apenas no cliente para evitar divergência de fuso entre SSR e browser. */
@@ -17,21 +17,74 @@ function useDataOferta(): string {
   return data;
 }
 
+const MIN_VISITANTES = 6;
+const MAX_VISITANTES = 15;
+
+/**
+ * Contador de "pessoas na página" simulado.
+ * Renderizado apenas no cliente (0 no SSR) para evitar mismatch de hidratação.
+ */
+function useVisitantesAoVivo(): number {
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const sortear = () =>
+      Math.floor(Math.random() * (MAX_VISITANTES - MIN_VISITANTES + 1)) + MIN_VISITANTES;
+
+    setTotal(sortear());
+
+    let timeoutId: ReturnType<typeof setTimeout>;
+    const agendar = () => {
+      // Intervalo irregular (3s a 7s) para parecer tráfego real.
+      timeoutId = setTimeout(() => {
+        setTotal((atual) => {
+          const delta = Math.random() < 0.5 ? -1 : 1;
+          const proximo = atual + delta;
+          if (proximo < MIN_VISITANTES) return MIN_VISITANTES;
+          if (proximo > MAX_VISITANTES) return MAX_VISITANTES;
+          return proximo;
+        });
+        agendar();
+      }, 3000 + Math.random() * 4000);
+    };
+    agendar();
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  return total;
+}
+
 export function Hero() {
   const dataOferta = useDataOferta();
+  const visitantes = useVisitantesAoVivo();
 
   return (
     <>
-      {/* 1. Notificação de prova social */}
-      <div className="bg-earth px-4 py-2 text-earth-foreground">
-        <div className="mx-auto flex max-w-3xl items-center gap-2">
-          <BellRing className="size-3.5 shrink-0" aria-hidden />
-          <p className="min-w-0 truncate text-[11px] sm:text-xs">
-            <strong className="font-semibold">Mateus D.</strong> garantiu o Plano Completo —
-            Altamira, PA · Há 1 min
+      {/* 1. Notificação de prova social — visitantes ao vivo */}
+      <div className="bg-earth px-4 py-2.5 text-earth-foreground">
+        <div className="mx-auto flex max-w-3xl items-center justify-center gap-2">
+          <span className="relative flex size-2 shrink-0">
+            <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-75" />
+            <span className="relative inline-flex size-2 rounded-full bg-accent" />
+          </span>
+          <Users className="size-3.5 shrink-0" aria-hidden />
+          <p
+            className="font-display text-xs font-extrabold uppercase tracking-wide sm:text-sm"
+            aria-live="polite"
+          >
+            {visitantes > 0 ? (
+              <>
+                <span className="text-accent">{visitantes} pessoas</span> estão vendo esta página
+                agora
+              </>
+            ) : (
+              "Vendo esta página agora"
+            )}
           </p>
         </div>
       </div>
+
 
       <header className="bg-gradient-to-b from-secondary to-background px-4 pb-10 pt-8">
         <div className="mx-auto max-w-3xl text-center">
