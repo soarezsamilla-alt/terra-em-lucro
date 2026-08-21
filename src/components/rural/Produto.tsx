@@ -33,9 +33,6 @@ export function Produto() {
   return (
     <section className="px-4 py-14">
       <div className="mx-auto max-w-4xl text-center">
-        <span className="inline-block rounded-full bg-primary px-3 py-1 text-[11px] font-bold uppercase text-primary-foreground">
-          Acesso imediato
-        </span>
 
         <div className="mx-auto mt-6 max-w-md overflow-hidden rounded-2xl border border-border bg-card text-left shadow-card">
           <img
