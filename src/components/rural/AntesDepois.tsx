@@ -1,5 +1,5 @@
 import antesDepois from "@/assets/antes-depois.jpg";
-import sitio from "@/assets/sitio-produtivo.jpg";
+
 import { Check, X } from "lucide-react";
 
 const SEM = [
@@ -16,12 +16,6 @@ const COM = [
   "Planejamento profissional na mão",
 ] as const;
 
-const RESULTADOS = [
-  "Planeja tudo em poucos dias",
-  "Organiza seu sítio com clareza",
-  "Cria novas fontes de renda",
-  "Para de depender de tentativa e erro",
-] as const;
 
 export function AntesDepois() {
   return (
