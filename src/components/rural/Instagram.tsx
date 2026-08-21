@@ -1,5 +1,5 @@
 import igPost02 from "@/assets/ig-post-02.jpeg";
-import antesDepois from "@/assets/antes-depois.jpg";
+import igPost03 from "@/assets/ig-post-03.jpeg";
 import igPost01 from "@/assets/ig-post-01.jpeg";
 import perfilIg from "@/assets/instagram-perfil.jpeg";
 import { Button } from "@/components/ui/button";
@@ -15,7 +15,7 @@ const NUMEROS = [
 const PREVIEWS = [
   { src: igPost01, alt: "Post do Instagram: sítio produtivo organizado" },
   { src: igPost02, alt: "Post do Instagram: planta de projeto rural" },
-  { src: antesDepois, alt: "Post do Instagram: antes e depois de um terreno" },
+  { src: igPost03, alt: "Post do Instagram: projeto rural" },
 ] as const;
 
 export function Instagram() {
