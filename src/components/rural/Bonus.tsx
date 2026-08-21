@@ -6,6 +6,7 @@ import bonus02Mockup from "@/assets/bonus-02-mockup.png";
 import bonus03Mockup from "@/assets/bonus-03-mockup.png";
 import bonus04Mockup from "@/assets/bonus-04-mockup.png";
 import bonus05Mockup from "@/assets/bonus-05-mockup.png";
+import bonus06Mockup from "@/assets/bonus-06-mockup.png";
 
 const BONUS_MOCKUPS: Record<number, string> = {
   1: bonus01Mockup,
@@ -13,6 +14,7 @@ const BONUS_MOCKUPS: Record<number, string> = {
   3: bonus03Mockup,
   4: bonus04Mockup,
   5: bonus05Mockup,
+  6: bonus06Mockup,
 };
 
 export function Bonus() {
