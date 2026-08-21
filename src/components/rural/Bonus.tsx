@@ -3,6 +3,13 @@ import { BONUS, PRECOS } from "@/lib/rural-config";
 import { Gift } from "lucide-react";
 import bonus01Mockup from "@/assets/bonus-01-mockup.png";
 import bonus02Mockup from "@/assets/bonus-02-mockup.png";
+import bonus03Mockup from "@/assets/bonus-03-mockup.png";
+
+const BONUS_MOCKUPS: Record<number, string> = {
+  1: bonus01Mockup,
+  2: bonus02Mockup,
+  3: bonus03Mockup,
+};
 
 export function Bonus() {
   return (
