@@ -1,5 +1,5 @@
 import antesDepois from "@/assets/antes-depois.jpg";
-import sitio from "@/assets/sitio-produtivo.jpg";
+
 import { Check, X } from "lucide-react";
 
 const SEM = [
@@ -16,12 +16,6 @@ const COM = [
   "Planejamento profissional na mão",
 ] as const;
 
-const RESULTADOS = [
-  "Planeja tudo em poucos dias",
-  "Organiza seu sítio com clareza",
-  "Cria novas fontes de renda",
-  "Para de depender de tentativa e erro",
-] as const;
 
 export function AntesDepois() {
   return (
@@ -73,35 +67,6 @@ export function AntesDepois() {
         </div>
       </section>
 
-      <section className="bg-earth px-4 py-14 text-earth-foreground">
-        <div className="mx-auto grid max-w-5xl items-center gap-8 md:grid-cols-2">
-          <div>
-            <span className="inline-block rounded-full bg-accent px-3 py-1 text-[11px] font-bold uppercase text-accent-foreground">
-              Resultado na Hora
-            </span>
-            <h2 className="mt-4 text-2xl sm:text-3xl">Você vai VER RESULTADO NA HORA</h2>
-            <p className="mt-3 text-sm opacity-90">
-              Imagine olhar seu terreno e saber exatamente o que fazer em cada parte.
-            </p>
-            <ul className="mt-5 space-y-2.5">
-              {RESULTADOS.map((item) => (
-                <li key={item} className="flex gap-2 text-sm font-medium">
-                  <Check className="mt-0.5 size-4 shrink-0 text-leaf" aria-hidden />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <img
-            src={sitio}
-            alt="Sítio produtivo organizado com hortas, pomar e criação de animais"
-            width={1024}
-            height={768}
-            loading="lazy"
-            className="w-full rounded-2xl shadow-card"
-          />
-        </div>
-      </section>
     </>
   );
 }
