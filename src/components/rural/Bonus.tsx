@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { BONUS, PRECOS } from "@/lib/rural-config";
 import { Gift } from "lucide-react";
 import bonus01Mockup from "@/assets/bonus-01-mockup.png";
+import bonus02Mockup from "@/assets/bonus-02-mockup.png";
 
 export function Bonus() {
   return (
@@ -32,10 +33,10 @@ export function Bonus() {
                   Bônus #{bonus.numero}
                 </p>
               </div>
-              {bonus.numero === 1 ? (
+              {bonus.numero === 1 || bonus.numero === 2 ? (
                 <img
-                  src={bonus01Mockup}
-                  alt="Mockup do Pack de Construções Rurais"
+                  src={bonus.numero === 1 ? bonus01Mockup : bonus02Mockup}
+                  alt={`Mockup do Bônus ${bonus.numero}`}
                   width={1254}
                   height={1254}
                   loading="lazy"
