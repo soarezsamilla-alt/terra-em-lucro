@@ -42,7 +42,7 @@ function Index() {
       <Bonus />
       <ProvaVisual
         titulo="Pare de procurar projetos espalhados por aí"
-        subtitulo="Cada planta já vem com divisões, áreas de produção e caminhos definidos — é só escolher a sua e começar."
+        subtitulo="Tenha em mãos a maior biblioteca de plantas de sítios e chácaras do Brasil"
       />
       <ComoFunciona />
       <Depoimentos />
