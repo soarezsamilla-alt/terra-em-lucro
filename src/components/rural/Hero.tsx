@@ -70,7 +70,7 @@ export function Hero() {
           </span>
           <Users className="size-3.5 shrink-0" aria-hidden />
           <p
-            className="font-display text-xs font-extrabold uppercase tracking-wide sm:text-sm"
+            className="font-display text-[10px] font-extrabold uppercase tracking-wide sm:text-xs"
             aria-live="polite"
           >
             {visitantes > 0 ? (
