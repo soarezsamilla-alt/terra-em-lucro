@@ -40,7 +40,7 @@ export function NotificacaoCompras() {
     return () => clearTimeout(timeout);
   }, []);
 
-  const comprador = COMPRADORES[indice];
+  const comprador = COMPRADORES[indice] ?? COMPRADORES[0]!;
   const minutos = (indice % 7) + 1;
 
   return (
