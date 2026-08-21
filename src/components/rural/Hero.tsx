@@ -42,9 +42,12 @@ export function Hero() {
 
           {/* 3. Hero */}
           <h1 className="mt-5 text-3xl leading-[1.1] sm:text-4xl md:text-5xl">
-            +100 Projetos de Sítios e Chácaras Produtivas que transforma sua{" "}
-            <span className="text-primary">terra parada em fonte de renda</span>
+            +100 Projetos de Sítios e Chácaras Produtivas
+            <span className="mt-3 block text-primary">
+              que transforma sua terra parada em fonte de renda
+            </span>
           </h1>
+
 
           <p className="mx-auto mt-5 max-w-2xl text-sm text-muted-foreground sm:text-base">
             A maior biblioteca de plantas de sítios do Brasil com +100 projetos profissionais com
