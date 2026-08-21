@@ -49,7 +49,7 @@ export function Produto() {
             width={1007}
             height={1260}
             loading="lazy"
-            className="mx-auto w-full max-w-[240px] object-contain"
+            className="mx-auto w-full max-w-[240px] object-contain animate-soft-pulse"
           />
           <div className="px-4 pb-5 pt-1">
 
