@@ -98,8 +98,12 @@ export function ProvaVisual({
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="-left-2" aria-label="Slide anterior" />
-          <CarouselNext className="-right-2" aria-label="Próximo slide" />
+          {!fluxoContinuo ? (
+            <>
+              <CarouselPrevious className="-left-2" aria-label="Slide anterior" />
+              <CarouselNext className="-right-2" aria-label="Próximo slide" />
+            </>
+          ) : null}
         </Carousel>
       </div>
     </section>
