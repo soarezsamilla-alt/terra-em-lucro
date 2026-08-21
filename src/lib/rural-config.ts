@@ -37,7 +37,7 @@ export const PRECOS = {
 export const CONTADOR_SEGUNDOS = 24 * 60 * 60;
 
 /** Checkout do upsell (Plano Completo com desconto). */
-export const CHECKOUT_UPSELL_URL = CHECKOUT_COMPLETO_URL;
+export const CHECKOUT_UPSELL_URL = "https://pay.wiapy.com/MowpM6rdLB";
 
 /** Duração do cronômetro do upsell, em segundos (15 min). */
 export const UPSELL_DURACAO_SEGUNDOS = 15 * 60;
