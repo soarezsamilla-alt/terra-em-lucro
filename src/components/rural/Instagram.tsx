@@ -1,6 +1,7 @@
 import amostra from "@/assets/projeto-amostra.jpg";
 import antesDepois from "@/assets/antes-depois.jpg";
 import sitio from "@/assets/sitio-produtivo.jpg";
+import perfilIg from "@/assets/instagram-perfil.jpeg";
 import { Button } from "@/components/ui/button";
 import { INSTAGRAM_URL } from "@/lib/rural-config";
 import { Instagram as InstagramIcon } from "lucide-react";
@@ -35,10 +36,10 @@ export function Instagram() {
         <div className="mt-7 rounded-2xl border border-border bg-card p-5 text-left shadow-card">
           <div className="flex min-w-0 items-center gap-3">
             <img
-              src={sitio}
+              src={perfilIg}
               alt="Foto de perfil do Rural Planner"
-              width={1024}
-              height={768}
+              width={1254}
+              height={1254}
               loading="lazy"
               className="size-14 shrink-0 rounded-full object-cover"
             />
