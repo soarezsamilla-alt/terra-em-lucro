@@ -37,7 +37,7 @@ export function Hero() {
         <div className="mx-auto max-w-3xl text-center">
           {/* 2. Selo de urgência */}
           <p className="inline-block rounded-full bg-accent/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-accent">
-            Oferta disponível até o dia, {dataOferta()}
+            Oferta disponível até o dia, {dataOferta}
           </p>
 
           {/* 3. Hero */}
