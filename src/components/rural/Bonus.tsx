@@ -40,9 +40,9 @@ export function Bonus() {
                   Bônus #{bonus.numero}
                 </p>
               </div>
-              {bonus.numero === 1 || bonus.numero === 2 ? (
+              {BONUS_MOCKUPS[bonus.numero] ? (
                 <img
-                  src={bonus.numero === 1 ? bonus01Mockup : bonus02Mockup}
+                  src={BONUS_MOCKUPS[bonus.numero]}
                   alt={`Mockup do Bônus ${bonus.numero}`}
                   width={1254}
                   height={1254}
