@@ -2,13 +2,24 @@ import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { PRECOS } from "@/lib/rural-config";
 import { BellRing, MessageCircle, ShieldCheck } from "lucide-react";
+import { useEffect, useState } from "react";
 
-function dataOferta(): string {
-  const hoje = new Date();
-  return hoje.toLocaleDateString("pt-BR", { day: "2-digit", month: "long" });
+/** Data calculada apenas no cliente para evitar divergência de fuso entre SSR e browser. */
+function useDataOferta(): string {
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    setData(
+      new Date().toLocaleDateString("pt-BR", { day: "2-digit", month: "long" }),
+    );
+  }, []);
+
+  return data;
 }
 
 export function Hero() {
+  const dataOferta = useDataOferta();
+
   return (
     <>
       {/* 1. Notificação de prova social */}
