@@ -32,6 +32,16 @@ export function Bonus() {
                   Bônus #{bonus.numero}
                 </p>
               </div>
+              {bonus.numero === 1 ? (
+                <img
+                  src={bonus01Mockup}
+                  alt="Mockup do Pack de Construções Rurais"
+                  width={1254}
+                  height={1254}
+                  loading="lazy"
+                  className="mx-auto mt-3 w-full max-w-[220px]"
+                />
+              ) : null}
               <h3 className="mt-3 font-display text-base font-extrabold">{bonus.titulo}</h3>
               <p className="mt-1.5 flex-1 text-sm text-muted-foreground">{bonus.descricao}</p>
               <p className="mt-4 flex items-center gap-2">
