@@ -52,15 +52,21 @@ const AMOSTRAS: readonly string[] = [
 export interface ProvaVisualProps {
   titulo?: string;
   subtitulo?: string;
+  /** Rolagem contínua (sem paradas) e sem setas de navegação. */
+  fluxoContinuo?: boolean;
 }
 
 export function ProvaVisual({
   titulo = "📖 Veja como são os PROJETOS POR DENTRO",
   subtitulo = "+100 plantas profissionais com medidas reais, prontas para aplicar.",
+  fluxoContinuo = false,
 }: ProvaVisualProps) {
-  const autoplay = useRef(
-    Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }),
+  const plugin = useRef(
+    fluxoContinuo
+      ? AutoScroll({ speed: 0.8, startDelay: 0, stopOnInteraction: false, stopOnMouseEnter: true })
+      : Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }),
   );
+
 
   return (
     <section className="bg-secondary px-4 py-14">
