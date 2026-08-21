@@ -1,6 +1,6 @@
 import amostra from "@/assets/projeto-amostra.jpg";
 import antesDepois from "@/assets/antes-depois.jpg";
-import sitio from "@/assets/sitio-produtivo.jpg";
+import igPost01 from "@/assets/ig-post-01.jpeg";
 import perfilIg from "@/assets/instagram-perfil.jpeg";
 import { Button } from "@/components/ui/button";
 import { INSTAGRAM_URL } from "@/lib/rural-config";
