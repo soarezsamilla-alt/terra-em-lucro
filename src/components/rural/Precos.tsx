@@ -134,6 +134,8 @@ export function Precos() {
         </p>
         <p className="mt-2 text-xs text-muted-foreground">7 dias de garantia incondicional</p>
       </div>
+
+      <UpsellDialog open={upsellAberto} onOpenChange={setUpsellAberto} />
     </section>
   );
 }
