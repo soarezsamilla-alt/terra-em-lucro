@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BONUS, PRECOS } from "@/lib/rural-config";
 import { Gift } from "lucide-react";
+import bonus01Mockup from "@/assets/bonus-01-mockup.png";
 
 export function Bonus() {
   return (
