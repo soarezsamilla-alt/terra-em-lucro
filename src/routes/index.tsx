@@ -52,7 +52,7 @@ function Index() {
       <Garantia />
       <Faq />
       <Rodape />
-      
+      <NotificacaoCompras />
     </main>
   );
 }
