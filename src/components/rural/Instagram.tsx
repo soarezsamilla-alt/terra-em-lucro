@@ -13,7 +13,7 @@ const NUMEROS = [
 ] as const;
 
 const PREVIEWS = [
-  { src: sitio, alt: "Post do Instagram: sítio produtivo organizado" },
+  { src: igPost01, alt: "Post do Instagram: sítio produtivo organizado" },
   { src: amostra, alt: "Post do Instagram: planta de projeto rural" },
   { src: antesDepois, alt: "Post do Instagram: antes e depois de um terreno" },
 ] as const;
