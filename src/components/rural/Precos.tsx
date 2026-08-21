@@ -100,9 +100,10 @@ export function Precos() {
               loading="lazy"
               className="mx-auto mt-3 w-full max-w-[300px] rounded-xl"
             />
-            <p className="mt-3 inline-block rounded-full bg-accent px-3 py-1 text-[11px] font-bold uppercase text-accent-foreground">
+            <p className="mx-auto mt-3 block w-fit rounded-full bg-accent px-3 py-1 text-center text-[11px] font-bold uppercase text-accent-foreground">
               Todos os Bônus Inclusos
             </p>
+
             <ul className="mt-3 space-y-1.5">
               {BULLETS_COMPLETO.map((texto) => (
                 <li key={texto} className="flex gap-2 text-xs leading-snug text-muted-foreground">
