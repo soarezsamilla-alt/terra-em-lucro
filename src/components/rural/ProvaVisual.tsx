@@ -8,46 +8,46 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import am01 from "@/assets/amostras/am-01.png.asset.json";
-import am02 from "@/assets/amostras/am-02.png.asset.json";
-import am03 from "@/assets/amostras/am-03.png.asset.json";
-import am04 from "@/assets/amostras/am-04.png.asset.json";
-import am05 from "@/assets/amostras/am-05.png.asset.json";
-import am06 from "@/assets/amostras/am-06.png.asset.json";
-import am07 from "@/assets/amostras/am-07.png.asset.json";
-import am08 from "@/assets/amostras/am-08.png.asset.json";
-import am09 from "@/assets/amostras/am-09.png.asset.json";
-import am10 from "@/assets/amostras/am-10.png.asset.json";
-import am11 from "@/assets/amostras/am-11.png.asset.json";
-import am12 from "@/assets/amostras/am-12.png.asset.json";
-import am13 from "@/assets/amostras/am-13.png.asset.json";
-import am14 from "@/assets/amostras/am-14.png.asset.json";
-import am15 from "@/assets/amostras/am-15.png.asset.json";
-import am16 from "@/assets/amostras/am-16.png.asset.json";
-import am17 from "@/assets/amostras/am-17.png.asset.json";
-import am18 from "@/assets/amostras/am-18.png.asset.json";
-import am19 from "@/assets/amostras/am-19.png.asset.json";
+import am01 from "@/assets/amostras/am-01.webp";
+import am02 from "@/assets/amostras/am-02.webp";
+import am03 from "@/assets/amostras/am-03.webp";
+import am04 from "@/assets/amostras/am-04.webp";
+import am05 from "@/assets/amostras/am-05.webp";
+import am06 from "@/assets/amostras/am-06.webp";
+import am07 from "@/assets/amostras/am-07.webp";
+import am08 from "@/assets/amostras/am-08.webp";
+import am09 from "@/assets/amostras/am-09.webp";
+import am10 from "@/assets/amostras/am-10.webp";
+import am11 from "@/assets/amostras/am-11.webp";
+import am12 from "@/assets/amostras/am-12.webp";
+import am13 from "@/assets/amostras/am-13.webp";
+import am14 from "@/assets/amostras/am-14.webp";
+import am15 from "@/assets/amostras/am-15.webp";
+import am16 from "@/assets/amostras/am-16.webp";
+import am17 from "@/assets/amostras/am-17.webp";
+import am18 from "@/assets/amostras/am-18.webp";
+import am19 from "@/assets/amostras/am-19.webp";
 
 const AMOSTRAS: readonly string[] = [
-  am01.url,
-  am02.url,
-  am03.url,
-  am04.url,
-  am05.url,
-  am06.url,
-  am07.url,
-  am08.url,
-  am09.url,
-  am10.url,
-  am11.url,
-  am12.url,
-  am13.url,
-  am14.url,
-  am15.url,
-  am16.url,
-  am17.url,
-  am18.url,
-  am19.url,
+  am01,
+  am02,
+  am03,
+  am04,
+  am05,
+  am06,
+  am07,
+  am08,
+  am09,
+  am10,
+  am11,
+  am12,
+  am13,
+  am14,
+  am15,
+  am16,
+  am17,
+  am18,
+  am19,
 ];
 
 export interface ProvaVisualProps {
