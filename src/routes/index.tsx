@@ -36,7 +36,7 @@ function Index() {
     <main className="min-h-screen bg-background">
       <Hero />
       <Beneficios />
-      <ProvaVisual />
+      <ProvaVisual imagensGrandes />
       <AntesDepois />
       <Produto />
       <Bonus />

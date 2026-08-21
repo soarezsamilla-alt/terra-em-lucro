@@ -55,12 +55,15 @@ export interface ProvaVisualProps {
   subtitulo?: string;
   /** Rolagem contínua (sem paradas) e sem setas de navegação. */
   fluxoContinuo?: boolean;
+  /** Exibe menos slides por vez, deixando as imagens maiores. */
+  imagensGrandes?: boolean;
 }
 
 export function ProvaVisual({
   titulo = "📖 Veja como são os PROJETOS POR DENTRO",
   subtitulo = "+100 plantas profissionais com medidas reais, prontas para aplicar.",
   fluxoContinuo = false,
+  imagensGrandes = false,
 }: ProvaVisualProps) {
   const plugin = useRef(
     fluxoContinuo
@@ -84,7 +87,14 @@ export function ProvaVisual({
         >
           <CarouselContent>
             {AMOSTRAS.map((src, i) => (
-              <CarouselItem key={src} className="basis-1/2 sm:basis-1/3 lg:basis-1/4">
+              <CarouselItem
+                key={src}
+                className={
+                  imagensGrandes
+                    ? "basis-4/5 sm:basis-1/2 lg:basis-1/3"
+                    : "basis-1/2 sm:basis-1/3 lg:basis-1/4"
+                }
+              >
                 <figure className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
                   <img
                     src={src}
