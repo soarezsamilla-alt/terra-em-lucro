@@ -39,6 +39,10 @@ export const CONTADOR_SEGUNDOS = 24 * 60 * 60;
 /** Checkout do upsell (Plano Completo com desconto). */
 export const CHECKOUT_UPSELL_URL = "https://pay.wiapy.com/MowpM6rdLB";
 
+/** Checkout usado quando o visitante recusa o upsell (segue no Plano Básico). */
+export const CHECKOUT_UPSELL_RECUSA_URL = "https://pay.wiapy.com/rtXyisd1bF";
+
+
 /** Duração do cronômetro do upsell, em segundos (15 min). */
 export const UPSELL_DURACAO_SEGUNDOS = 15 * 60;
 
