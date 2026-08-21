@@ -1,8 +1,10 @@
+import { useState } from "react";
 import basicoMockup from "@/assets/plano-basico-mockup.png.asset.json";
 import heroMockup from "@/assets/hero-mockup.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { Contador } from "@/components/rural/Contador";
-import { CHECKOUT_BASICO_URL, CHECKOUT_COMPLETO_URL, PRECOS } from "@/lib/rural-config";
+import { UpsellDialog } from "@/components/rural/UpsellDialog";
+import { CHECKOUT_COMPLETO_URL, PRECOS } from "@/lib/rural-config";
 import { Check, X } from "lucide-react";
 
 const BULLETS_BASICO = [
