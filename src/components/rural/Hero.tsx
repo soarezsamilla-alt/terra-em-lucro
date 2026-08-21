@@ -117,8 +117,8 @@ export function Hero() {
           </p>
 
 
-          <p className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold text-primary">
-            <MessageCircle className="size-4 shrink-0" aria-hidden />
+          <p className="mt-4 flex items-center justify-center gap-1.5 text-xs font-semibold text-primary">
+            <MessageCircle className="size-3.5 shrink-0" aria-hidden />
             Receba tudo na hora no seu WhatsApp e e-mail
           </p>
 
