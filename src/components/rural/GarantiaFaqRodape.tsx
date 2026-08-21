@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { FAQ } from "@/lib/rural-config";
 import { ShieldCheck } from "lucide-react";
+import garantiaSelo from "@/assets/garantia-selo.png";
 
 export function Garantia() {
   return (
