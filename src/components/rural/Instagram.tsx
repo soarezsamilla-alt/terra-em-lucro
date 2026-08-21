@@ -1,6 +1,6 @@
 import amostra from "@/assets/projeto-amostra.jpg";
 import antesDepois from "@/assets/antes-depois.jpg";
-import sitio from "@/assets/sitio-produtivo.jpg";
+import igPost01 from "@/assets/ig-post-01.jpeg";
 import perfilIg from "@/assets/instagram-perfil.jpeg";
 import { Button } from "@/components/ui/button";
 import { INSTAGRAM_URL } from "@/lib/rural-config";
@@ -13,7 +13,7 @@ const NUMEROS = [
 ] as const;
 
 const PREVIEWS = [
-  { src: sitio, alt: "Post do Instagram: sítio produtivo organizado" },
+  { src: igPost01, alt: "Post do Instagram: sítio produtivo organizado" },
   { src: amostra, alt: "Post do Instagram: planta de projeto rural" },
   { src: antesDepois, alt: "Post do Instagram: antes e depois de um terreno" },
 ] as const;
