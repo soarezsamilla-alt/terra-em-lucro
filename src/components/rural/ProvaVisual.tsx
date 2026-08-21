@@ -71,7 +71,7 @@ export function ProvaVisual() {
         >
           <CarouselContent>
             {AMOSTRAS.map((src, i) => (
-              <CarouselItem key={src} className="basis-4/5 sm:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={src} className="basis-1/2 sm:basis-1/3 lg:basis-1/4">
                 <figure className="overflow-hidden rounded-xl border border-border bg-card shadow-card">
                   <img
                     src={src}
