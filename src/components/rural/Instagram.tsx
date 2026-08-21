@@ -75,7 +75,11 @@ export function Instagram() {
             ))}
           </div>
 
-          <Button asChild variant="ctaGreen" size="xl" className="mt-5 w-full text-sm">
+          <Button
+            asChild
+            variant="ctaGreen"
+            className="mt-5 h-10 w-full px-4 text-xs animate-cta-pulse [&_svg]:size-4"
+          >
             <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
               <InstagramIcon aria-hidden />
               Ver @ruralplanner.oficial no Instagram
