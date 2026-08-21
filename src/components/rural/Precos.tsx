@@ -67,8 +67,13 @@ export function Precos() {
                 </li>
               ))}
             </ul>
-            <Button asChild variant="ctaGreen" size="xl" className="mt-6 h-10 w-full animate-cta-pulse px-4 text-xs sm:text-sm">
-              <a href={CHECKOUT_BASICO_URL}>QUERO O BÁSICO</a>
+            <Button
+              variant="ctaGreen"
+              size="xl"
+              className="mt-6 h-10 w-full animate-cta-pulse px-4 text-xs sm:text-sm"
+              onClick={() => setUpsellAberto(true)}
+            >
+              QUERO O BÁSICO
             </Button>
           </article>
 
