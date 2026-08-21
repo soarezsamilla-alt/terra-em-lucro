@@ -67,7 +67,13 @@ export function ProvaVisual({
 }: ProvaVisualProps) {
   const plugin = useRef(
     fluxoContinuo
-      ? AutoScroll({ speed: 0.8, startDelay: 0, stopOnInteraction: false, stopOnMouseEnter: true })
+      ? AutoScroll({
+          speed: 0.8,
+          startDelay: 0,
+          stopOnInteraction: false,
+          stopOnMouseEnter: false,
+          stopOnFocusIn: false,
+        })
       : Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }),
   );
 
