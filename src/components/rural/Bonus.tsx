@@ -3,6 +3,13 @@ import { BONUS, PRECOS } from "@/lib/rural-config";
 import { Gift } from "lucide-react";
 import bonus01Mockup from "@/assets/bonus-01-mockup.png";
 import bonus02Mockup from "@/assets/bonus-02-mockup.png";
+import bonus03Mockup from "@/assets/bonus-03-mockup.png";
+
+const BONUS_MOCKUPS: Record<number, string> = {
+  1: bonus01Mockup,
+  2: bonus02Mockup,
+  3: bonus03Mockup,
+};
 
 export function Bonus() {
   return (
@@ -33,9 +40,9 @@ export function Bonus() {
                   Bônus #{bonus.numero}
                 </p>
               </div>
-              {bonus.numero === 1 || bonus.numero === 2 ? (
+              {BONUS_MOCKUPS[bonus.numero] ? (
                 <img
-                  src={bonus.numero === 1 ? bonus01Mockup : bonus02Mockup}
+                  src={BONUS_MOCKUPS[bonus.numero]}
                   alt={`Mockup do Bônus ${bonus.numero}`}
                   width={1254}
                   height={1254}
