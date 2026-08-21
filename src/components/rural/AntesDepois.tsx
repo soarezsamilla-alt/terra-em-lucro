@@ -37,13 +37,13 @@ export function AntesDepois() {
               className="w-full"
             />
 
-            <span className="absolute left-2 top-2 flex items-center gap-1.5 rounded-full bg-card/95 px-2.5 py-1 text-[10px] font-bold text-foreground shadow-card backdrop-blur sm:text-xs">
-              <X className="size-3.5 shrink-0 text-destructive" aria-hidden />
+            <span className="absolute left-1.5 top-1.5 flex items-center gap-1 rounded-full bg-card/95 px-1.5 py-0.5 text-[8px] font-bold text-foreground shadow-card backdrop-blur sm:text-[10px]">
+              <X className="size-2.5 shrink-0 text-destructive" aria-hidden />
               Sem os Projetos
             </span>
 
-            <span className="absolute right-2 top-2 flex items-center gap-1.5 rounded-full bg-card/95 px-2.5 py-1 text-[10px] font-bold text-foreground shadow-card backdrop-blur sm:text-xs">
-              <Check className="size-3.5 shrink-0 text-primary" aria-hidden />
+            <span className="absolute right-1.5 top-1.5 flex items-center gap-1 rounded-full bg-card/95 px-1.5 py-0.5 text-[8px] font-bold text-foreground shadow-card backdrop-blur sm:text-[10px]">
+              <Check className="size-2.5 shrink-0 text-primary" aria-hidden />
               Com +100 Projetos
             </span>
           </div>
