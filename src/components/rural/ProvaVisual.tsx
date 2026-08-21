@@ -87,11 +87,11 @@ export function ProvaVisual({
         </p>
 
         <Carousel
-          opts={{ align: "start", loop: true }}
+          opts={{ align: "start", loop: true, watchDrag: !fluxoContinuo }}
           plugins={[plugin.current]}
           className="mt-8"
         >
-          <CarouselContent>
+          <CarouselContent className={fluxoContinuo ? "pointer-events-none touch-pan-y" : undefined}>
             {AMOSTRAS.map((src, i) => (
               <CarouselItem
                 key={src}
