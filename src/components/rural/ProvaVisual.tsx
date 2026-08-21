@@ -49,7 +49,15 @@ const AMOSTRAS: readonly string[] = [
   am19.url,
 ];
 
-export function ProvaVisual() {
+export interface ProvaVisualProps {
+  titulo?: string;
+  subtitulo?: string;
+}
+
+export function ProvaVisual({
+  titulo = "📖 Veja como são os PROJETOS POR DENTRO",
+  subtitulo = "+100 plantas profissionais com medidas reais, prontas para aplicar.",
+}: ProvaVisualProps) {
   const autoplay = useRef(
     Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }),
   );
@@ -57,11 +65,9 @@ export function ProvaVisual() {
   return (
     <section className="bg-secondary px-4 py-14">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-center text-2xl sm:text-3xl">
-          📖 Veja como são os PROJETOS POR DENTRO
-        </h2>
+        <h2 className="text-center text-2xl sm:text-3xl">{titulo}</h2>
         <p className="mx-auto mt-2 max-w-xl text-center text-sm text-muted-foreground">
-          +100 plantas profissionais com medidas reais, prontas para aplicar.
+          {subtitulo}
         </p>
 
         <Carousel
