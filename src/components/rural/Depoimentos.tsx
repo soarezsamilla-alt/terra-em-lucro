@@ -7,11 +7,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import dep01 from "@/assets/depoimentos/dep-01.png";
-import dep02 from "@/assets/depoimentos/dep-02.png";
-import dep03 from "@/assets/depoimentos/dep-03.png";
-import dep04 from "@/assets/depoimentos/dep-04.png";
-import dep05 from "@/assets/depoimentos/dep-05.png";
+import dep01 from "@/assets/depoimentos/dep-01.webp";
+import dep02 from "@/assets/depoimentos/dep-02.webp";
+import dep03 from "@/assets/depoimentos/dep-03.webp";
+import dep04 from "@/assets/depoimentos/dep-04.webp";
+import dep05 from "@/assets/depoimentos/dep-05.webp";
 
 const DEPOIMENTOS_IMG: readonly string[] = [
   dep01,

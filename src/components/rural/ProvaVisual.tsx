@@ -8,25 +8,25 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import am01 from "@/assets/amostras/am-01.png";
-import am02 from "@/assets/amostras/am-02.png";
-import am03 from "@/assets/amostras/am-03.png";
-import am04 from "@/assets/amostras/am-04.png";
-import am05 from "@/assets/amostras/am-05.png";
-import am06 from "@/assets/amostras/am-06.png";
-import am07 from "@/assets/amostras/am-07.png";
-import am08 from "@/assets/amostras/am-08.png";
-import am09 from "@/assets/amostras/am-09.png";
-import am10 from "@/assets/amostras/am-10.png";
-import am11 from "@/assets/amostras/am-11.png";
-import am12 from "@/assets/amostras/am-12.png";
-import am13 from "@/assets/amostras/am-13.png";
-import am14 from "@/assets/amostras/am-14.png";
-import am15 from "@/assets/amostras/am-15.png";
-import am16 from "@/assets/amostras/am-16.png";
-import am17 from "@/assets/amostras/am-17.png";
-import am18 from "@/assets/amostras/am-18.png";
-import am19 from "@/assets/amostras/am-19.png";
+import am01 from "@/assets/amostras/am-01.webp";
+import am02 from "@/assets/amostras/am-02.webp";
+import am03 from "@/assets/amostras/am-03.webp";
+import am04 from "@/assets/amostras/am-04.webp";
+import am05 from "@/assets/amostras/am-05.webp";
+import am06 from "@/assets/amostras/am-06.webp";
+import am07 from "@/assets/amostras/am-07.webp";
+import am08 from "@/assets/amostras/am-08.webp";
+import am09 from "@/assets/amostras/am-09.webp";
+import am10 from "@/assets/amostras/am-10.webp";
+import am11 from "@/assets/amostras/am-11.webp";
+import am12 from "@/assets/amostras/am-12.webp";
+import am13 from "@/assets/amostras/am-13.webp";
+import am14 from "@/assets/amostras/am-14.webp";
+import am15 from "@/assets/amostras/am-15.webp";
+import am16 from "@/assets/amostras/am-16.webp";
+import am17 from "@/assets/amostras/am-17.webp";
+import am18 from "@/assets/amostras/am-18.webp";
+import am19 from "@/assets/amostras/am-19.webp";
 
 const AMOSTRAS: readonly string[] = [
   am01,

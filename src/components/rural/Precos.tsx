@@ -1,6 +1,6 @@
 import { useState } from "react";
-import basicoMockup from "@/assets/plano-basico-mockup.png";
-import heroMockup from "@/assets/hero-mockup.png";
+import basicoMockup from "@/assets/plano-basico-mockup.webp";
+import heroMockup from "@/assets/hero-mockup.webp";
 import { Button } from "@/components/ui/button";
 import { Contador } from "@/components/rural/Contador";
 import { UpsellDialog } from "@/components/rural/UpsellDialog";

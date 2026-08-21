@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import heroMockup from "@/assets/hero-mockup.png";
+import heroMockup from "@/assets/hero-mockup.webp";
 import {
   CHECKOUT_UPSELL_RECUSA_URL,
   CHECKOUT_UPSELL_URL,

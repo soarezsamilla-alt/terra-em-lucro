@@ -1,4 +1,4 @@
-import produtoMockup from "@/assets/produto-mockup.png";
+import produtoMockup from "@/assets/produto-mockup.webp";
 import { Ruler, LayoutGrid, FileCheck2, Infinity as InfinityIcon, RefreshCw } from "lucide-react";
 
 const ITENS = [

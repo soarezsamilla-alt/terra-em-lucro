@@ -1,4 +1,4 @@
-import heroMockup from "@/assets/hero-mockup.png";
+import heroMockup from "@/assets/hero-mockup.webp";
 import { Button } from "@/components/ui/button";
 import { PRECOS } from "@/lib/rural-config";
 import { MessageCircle, ShieldCheck, Users } from "lucide-react";
