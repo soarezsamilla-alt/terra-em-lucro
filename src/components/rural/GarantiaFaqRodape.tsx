@@ -6,17 +6,20 @@ import {
 } from "@/components/ui/accordion";
 import { FAQ } from "@/lib/rural-config";
 import { ShieldCheck } from "lucide-react";
+import garantiaSelo from "@/assets/garantia-selo.png";
 
 export function Garantia() {
   return (
     <section className="px-4 py-14">
       <div className="mx-auto max-w-2xl rounded-2xl border border-primary/30 bg-primary/5 p-7 text-center">
-        <div className="mx-auto grid size-24 place-items-center rounded-full bg-gradient-leaf text-primary-foreground">
-          <div>
-            <p className="font-display text-xl font-extrabold leading-none">7 DIAS</p>
-            <p className="text-[10px] font-bold uppercase tracking-wide">Garantia</p>
-          </div>
-        </div>
+        <img
+          src={garantiaSelo}
+          alt="Selo de garantia incondicional de 7 dias"
+          width={1024}
+          height={1024}
+          loading="lazy"
+          className="mx-auto w-full max-w-[150px] object-contain animate-soft-pulse"
+        />
         <h2 className="mt-5 text-2xl">Garantia Incondicional de 7 dias</h2>
         <p className="mt-3 text-sm text-muted-foreground">
           Se por qualquer motivo você não ficar satisfeito com o material, basta solicitar o
