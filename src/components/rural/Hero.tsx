@@ -43,7 +43,7 @@ export function Hero() {
           {/* 3. Hero */}
           <h1 className="mt-5 text-3xl leading-[1.1] sm:text-4xl md:text-5xl">
             +100 Projetos de Sítios e Chácaras Produtivas
-            <span className="mt-3 block text-primary">
+            <span className="mt-3 block uppercase text-primary">
               que transforma sua terra parada em fonte de renda
             </span>
           </h1>
