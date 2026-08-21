@@ -43,7 +43,7 @@ export function UpsellDialog({ open, onOpenChange }: UpsellDialogProps) {
     if (!open) return;
     setRestante(UPSELL_DURACAO_SEGUNDOS);
     const id = window.setInterval(() => {
-      setRestante((atual) => (atual <= 1 ? 0 : atual - 1));
+      setRestante((atual: number) => (atual <= 1 ? 0 : atual - 1));
     }, 1000);
     return () => window.clearInterval(id);
   }, [open]);
