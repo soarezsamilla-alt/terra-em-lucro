@@ -49,12 +49,6 @@ export function Hero() {
           </h1>
 
 
-          <p className="mx-auto mt-5 max-w-2xl text-sm text-muted-foreground sm:text-base">
-            A maior biblioteca de plantas de sítios do Brasil com +100 projetos profissionais com
-            medidas reais, divisões estratégicas e layouts prontos para executar, mesmo que você
-            nunca tenha planejado nada rural na vida.
-          </p>
-
           <img
             src={heroMockup.url}
             alt="Mockup do kit digital Rural Planner com projetos de sítios e chácaras"
@@ -62,6 +56,13 @@ export function Hero() {
             height={1024}
             className="animate-soft-pulse mx-auto mt-7 w-full max-w-xl"
           />
+
+          <p className="mx-auto mt-5 max-w-2xl text-sm text-muted-foreground sm:text-base">
+            A maior biblioteca de plantas de sítios do Brasil com +100 projetos profissionais com
+            medidas reais, divisões estratégicas e layouts prontos para executar, mesmo que você
+            nunca tenha planejado nada rural na vida.
+          </p>
+
 
           <p className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold text-primary">
             <MessageCircle className="size-4 shrink-0" aria-hidden />
