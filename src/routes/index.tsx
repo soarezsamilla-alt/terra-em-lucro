@@ -9,6 +9,7 @@ import { Depoimentos } from "@/components/rural/Depoimentos";
 import { Faq, Garantia, Rodape } from "@/components/rural/GarantiaFaqRodape";
 import { Hero } from "@/components/rural/Hero";
 import { Instagram } from "@/components/rural/Instagram";
+import { NotificacaoCompras } from "@/components/rural/NotificacaoCompras";
 import { Precos } from "@/components/rural/Precos";
 import { Produto } from "@/components/rural/Produto";
 import { ProvaVisual } from "@/components/rural/ProvaVisual";
