@@ -19,7 +19,8 @@ export interface Bonus {
 
 export const CHECKOUT_BASICO_URL = "#precos";
 export const CHECKOUT_COMPLETO_URL = "#precos";
-export const INSTAGRAM_URL = "https://instagram.com/ruralplanner.oficial";
+export const INSTAGRAM_URL =
+  "https://www.instagram.com/ruralplanner.oficial?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=";
 
 export const PRECOS = {
   basicoDe: "R$97,90",
