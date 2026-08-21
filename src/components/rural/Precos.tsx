@@ -82,7 +82,7 @@ export function Precos() {
           </article>
 
           {/* Plano Completo */}
-          <article className="relative rounded-2xl border-2 border-accent bg-card p-5 text-left shadow-cta">
+          <article id="plano-completo" className="relative scroll-mt-24 rounded-2xl border-2 border-accent bg-card p-5 text-left shadow-cta">
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-sun px-3 py-1 text-[11px] font-bold uppercase text-accent-foreground">
               Mais Vendido
             </span>

@@ -123,7 +123,7 @@ export function Hero() {
           </p>
 
           <Button asChild variant="cta" size="xl" className="mt-6 h-10 w-full max-w-xs animate-cta-pulse px-4 text-xs sm:text-sm">
-            <a href="#precos">{PRECOS.ctaPrincipal}</a>
+            <a href="#plano-completo">{PRECOS.ctaPrincipal}</a>
           </Button>
 
           <p className="mt-3 flex items-center justify-center gap-1.5 text-xs text-muted-foreground">

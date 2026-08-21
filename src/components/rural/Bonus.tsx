@@ -79,7 +79,7 @@ export function Bonus() {
         </div>
 
         <Button asChild variant="cta" size="xl" className="mt-6 h-10 w-full max-w-xs animate-cta-pulse px-4 text-xs sm:text-sm">
-          <a href="#precos">{PRECOS.ctaPrincipal}</a>
+          <a href="#plano-completo">{PRECOS.ctaPrincipal}</a>
         </Button>
       </div>
     </section>
