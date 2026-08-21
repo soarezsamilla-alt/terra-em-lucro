@@ -104,7 +104,7 @@ export function UpsellDialog({ open, onOpenChange }: UpsellDialogProps) {
           asChild
           variant="cta"
           size="xl"
-          className="mt-3.5 h-[2.4rem] w-full animate-cta-pulse px-4 text-xs"
+          className="mx-auto mt-3.5 h-[2rem] w-[88%] animate-cta-pulse px-3 text-[10px]"
         >
           <a href={CHECKOUT_UPSELL_URL}>SIM! QUERO O COMPLETO POR {PRECOS.upsellPor}</a>
         </Button>
