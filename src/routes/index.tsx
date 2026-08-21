@@ -40,7 +40,10 @@ function Index() {
       <AntesDepois />
       <Produto />
       <Bonus />
-      <ProvaVisual />
+      <ProvaVisual
+        titulo="🧭 Mais exemplos de SÍTIOS PRONTOS PARA EXECUTAR"
+        subtitulo="Cada planta já vem com divisões, áreas de produção e caminhos definidos — é só escolher a sua e começar."
+      />
       <ComoFunciona />
       <Depoimentos />
       <Precos />
