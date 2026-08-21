@@ -28,6 +28,8 @@ const BULLETS_COMPLETO = [
 ] as const;
 
 export function Precos() {
+  const [upsellAberto, setUpsellAberto] = useState(false);
+
   return (
     <section id="precos" className="scroll-mt-4 px-4 py-14">
       <div className="mx-auto max-w-5xl text-center">
