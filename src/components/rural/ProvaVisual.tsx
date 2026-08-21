@@ -79,7 +79,7 @@ export function ProvaVisual({
 
         <Carousel
           opts={{ align: "start", loop: true }}
-          plugins={[autoplay.current]}
+          plugins={[plugin.current]}
           className="mt-8"
         >
           <CarouselContent>
