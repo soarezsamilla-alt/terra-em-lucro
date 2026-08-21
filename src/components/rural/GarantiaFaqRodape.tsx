@@ -18,7 +18,7 @@ export function Garantia() {
           width={1024}
           height={1024}
           loading="lazy"
-          className="mx-auto w-full max-w-[150px] object-contain animate-soft-pulse"
+          className="mx-auto w-full max-w-[110px] object-contain animate-soft-pulse"
         />
         <h2 className="mt-5 text-2xl">Garantia Incondicional de 7 dias</h2>
         <p className="mt-3 text-sm text-muted-foreground">
