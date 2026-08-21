@@ -27,14 +27,26 @@ export function AntesDepois() {
             <span className="text-primary">COM OS PROJETOS</span>
           </h2>
 
-          <img
-            src={antesDepois}
-            alt="Comparação entre terreno abandonado e sítio organizado e produtivo"
-            width={1200}
-            height={675}
-            loading="lazy"
-            className="mt-7 w-full rounded-2xl shadow-card"
-          />
+          <div className="relative mt-7 overflow-hidden rounded-2xl shadow-card">
+            <img
+              src={antesDepois}
+              alt="Comparação entre terreno abandonado e sítio organizado e produtivo"
+              width={1200}
+              height={675}
+              loading="lazy"
+              className="w-full"
+            />
+
+            <span className="absolute left-2 top-2 flex items-center gap-1.5 rounded-full bg-card/95 px-2.5 py-1 text-[10px] font-bold text-foreground shadow-card backdrop-blur sm:text-xs">
+              <X className="size-3.5 shrink-0 text-destructive" aria-hidden />
+              Sem os Projetos
+            </span>
+
+            <span className="absolute right-2 top-2 flex items-center gap-1.5 rounded-full bg-card/95 px-2.5 py-1 text-[10px] font-bold text-foreground shadow-card backdrop-blur sm:text-xs">
+              <Check className="size-3.5 shrink-0 text-primary" aria-hidden />
+              Com +100 Projetos
+            </span>
+          </div>
 
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div className="rounded-xl border border-destructive/30 bg-destructive/5 p-5">
