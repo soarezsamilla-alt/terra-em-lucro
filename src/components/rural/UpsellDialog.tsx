@@ -50,13 +50,13 @@ export function UpsellDialog({ open, onOpenChange }: UpsellDialogProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[300px] gap-0 overflow-y-auto p-4 text-center max-h-[85vh]">
+      <DialogContent className="max-w-[340px] gap-0 overflow-y-auto p-[1.15rem] text-center max-h-[88vh]">
         <DialogHeader className="space-y-1.5">
           <span className="mx-auto flex w-fit items-center gap-1 rounded-full bg-destructive px-3 py-1 text-[10px] font-bold uppercase text-destructive-foreground">
             <Flame className="size-3" aria-hidden />
             Espere! Oferta única nesta página
           </span>
-          <DialogTitle className="text-center font-display text-base font-extrabold uppercase leading-tight">
+          <DialogTitle className="text-center font-display text-[1.05rem] font-extrabold uppercase leading-tight">
             Leve o Plano Completo com{" "}
             <span className="text-primary">33% de desconto</span>
           </DialogTitle>
@@ -73,7 +73,7 @@ export function UpsellDialog({ open, onOpenChange }: UpsellDialogProps) {
           width={1536}
           height={1024}
           loading="lazy"
-          className="mx-auto mt-2 w-full max-w-[140px] animate-soft-pulse"
+          className="mx-auto mt-2.5 w-full max-w-[170px] animate-soft-pulse"
         />
 
         <div className="mt-2 flex items-center justify-center gap-1.5 rounded-lg bg-destructive/10 px-2.5 py-1.5 text-destructive">
@@ -86,7 +86,7 @@ export function UpsellDialog({ open, onOpenChange }: UpsellDialogProps) {
         <p className="mt-2 text-[11px] text-muted-foreground">
           de <span className="line-through">{PRECOS.completoPor}</span> por apenas:
         </p>
-        <p className="font-display text-3xl font-extrabold text-accent">
+        <p className="font-display text-[2rem] font-extrabold text-accent">
           {PRECOS.upsellPor}
         </p>
         <p className="text-[10px] text-muted-foreground">pagamento único</p>
@@ -104,7 +104,7 @@ export function UpsellDialog({ open, onOpenChange }: UpsellDialogProps) {
           asChild
           variant="cta"
           size="xl"
-          className="mt-3 h-9 w-full animate-cta-pulse px-3 text-[11px]"
+          className="mt-3.5 h-[2.4rem] w-full animate-cta-pulse px-4 text-xs"
         >
           <a href={CHECKOUT_UPSELL_URL}>SIM! QUERO O COMPLETO POR {PRECOS.upsellPor}</a>
         </Button>
