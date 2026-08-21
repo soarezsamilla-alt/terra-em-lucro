@@ -126,8 +126,8 @@ export function Hero() {
             <a href="#plano-completo">{PRECOS.ctaPrincipal}</a>
           </Button>
 
-          <p className="mt-3 flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
-            <ShieldCheck className="size-3.5 shrink-0" aria-hidden />
+          <p className="mt-3 flex items-center justify-center gap-1 text-[10px] text-muted-foreground">
+            <ShieldCheck className="size-3 shrink-0" aria-hidden />
             Compra segura • 7 dias de garantia incondicional
           </p>
         </div>
