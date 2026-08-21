@@ -43,6 +43,7 @@ function Index() {
       <ProvaVisual
         titulo="Pare de procurar projetos espalhados por aí"
         subtitulo="Tenha em mãos a maior biblioteca de plantas de sítios e chácaras do Brasil"
+        fluxoContinuo
       />
       <ComoFunciona />
       <Depoimentos />
