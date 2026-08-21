@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
 import {
   Carousel,
   CarouselContent,
@@ -52,15 +53,21 @@ const AMOSTRAS: readonly string[] = [
 export interface ProvaVisualProps {
   titulo?: string;
   subtitulo?: string;
+  /** Rolagem contínua (sem paradas) e sem setas de navegação. */
+  fluxoContinuo?: boolean;
 }
 
 export function ProvaVisual({
   titulo = "📖 Veja como são os PROJETOS POR DENTRO",
   subtitulo = "+100 plantas profissionais com medidas reais, prontas para aplicar.",
+  fluxoContinuo = false,
 }: ProvaVisualProps) {
-  const autoplay = useRef(
-    Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }),
+  const plugin = useRef(
+    fluxoContinuo
+      ? AutoScroll({ speed: 0.8, startDelay: 0, stopOnInteraction: false, stopOnMouseEnter: true })
+      : Autoplay({ delay: 2500, stopOnInteraction: false, stopOnMouseEnter: true }),
   );
+
 
   return (
     <section className="bg-secondary px-4 py-14">
@@ -72,7 +79,7 @@ export function ProvaVisual({
 
         <Carousel
           opts={{ align: "start", loop: true }}
-          plugins={[autoplay.current]}
+          plugins={[plugin.current]}
           className="mt-8"
         >
           <CarouselContent>
@@ -91,8 +98,12 @@ export function ProvaVisual({
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="-left-2" aria-label="Slide anterior" />
-          <CarouselNext className="-right-2" aria-label="Próximo slide" />
+          {!fluxoContinuo ? (
+            <>
+              <CarouselPrevious className="-left-2" aria-label="Slide anterior" />
+              <CarouselNext className="-right-2" aria-label="Próximo slide" />
+            </>
+          ) : null}
         </Carousel>
       </div>
     </section>
