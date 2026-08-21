@@ -18,7 +18,7 @@ export interface Bonus {
 }
 
 export const CHECKOUT_BASICO_URL = "#precos";
-export const CHECKOUT_COMPLETO_URL = "#precos";
+export const CHECKOUT_COMPLETO_URL = "https://pay.wiapy.com/sOZisMvvt9";
 export const INSTAGRAM_URL =
   "https://www.instagram.com/ruralplanner.oficial?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=";
 
