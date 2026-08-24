@@ -9,9 +9,10 @@ function useDataOferta(): string {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    setData(
-      new Date().toLocaleDateString("pt-BR", { day: "2-digit", month: "long" }),
-    );
+    const hoje = new Date();
+    const amanha = new Date(hoje);
+    amanha.setDate(hoje.getDate() + 1);
+    setData(amanha.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric" }));
   }, []);
 
   return data;
