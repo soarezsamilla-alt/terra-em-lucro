@@ -86,9 +86,6 @@ export function Precos() {
             <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-sun px-3 py-1 text-[11px] font-bold uppercase text-accent-foreground">
               Mais Vendido
             </span>
-            <div className="mt-2">
-              <Contador />
-            </div>
             <div className="text-center">
               <h3 className="mt-3 font-display text-lg font-extrabold uppercase">Plano Completo</h3>
               <p className="mt-1 text-sm text-muted-foreground">
