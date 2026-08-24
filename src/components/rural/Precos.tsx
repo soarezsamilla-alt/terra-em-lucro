@@ -57,7 +57,7 @@ export function Precos() {
               width={1536}
               height={1024}
               loading="lazy"
-              className="mt-4 w-full rounded-xl"
+              className="mx-auto mt-4 w-full max-w-[220px] rounded-xl"
             />
             <ul className="mt-5 space-y-2">
               {BULLETS_BASICO.map((bullet) => (
