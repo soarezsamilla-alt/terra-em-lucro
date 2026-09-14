@@ -1,4 +1,4 @@
-import antesDepois from "@/assets/antes-depois.jpg";
+import antesDepois from "@/assets/antes-depois-fazenda.jpg";
 
 import { Check, X } from "lucide-react";
 
@@ -30,9 +30,9 @@ export function AntesDepois() {
           <div className="relative mt-7 overflow-hidden rounded-2xl shadow-card">
             <img
               src={antesDepois}
-              alt="Comparação entre terreno abandonado e sítio organizado e produtivo"
-              width={1200}
-              height={675}
+              alt="Vista aérea da mesma fazenda antes, vazia e desorganizada, e depois, com galinheiro, chiqueiro, curral, represa, pomar e plantações"
+              width={1536}
+              height={864}
               loading="lazy"
               className="w-full"
             />
