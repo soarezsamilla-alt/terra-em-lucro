@@ -2,17 +2,12 @@ import { CONTADOR_SEGUNDOS } from "@/lib/rural-config";
 import { Clock3 } from "lucide-react";
 import { useEffect, useState } from "react";
 
-interface UnidadeTempo {
-  readonly valor: string;
-  readonly rotulo: string;
-}
-
-function criarUnidades(total: number): readonly UnidadeTempo[] {
+function criarUnidades(total: number) {
   return [
     { valor: String(Math.floor(total / 3600)).padStart(2, "0"), rotulo: "HORAS" },
     { valor: String(Math.floor((total % 3600) / 60)).padStart(2, "0"), rotulo: "MIN" },
     { valor: String(total % 60).padStart(2, "0"), rotulo: "SEG" },
-  ];
+  ] as const;
 }
 
 /** Contador regressivo da oferta. Reinicia a cada sessão. */
