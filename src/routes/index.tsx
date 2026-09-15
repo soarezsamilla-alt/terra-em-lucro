@@ -13,6 +13,7 @@ import { NotificacaoCompras } from "@/components/rural/NotificacaoCompras";
 import { Precos } from "@/components/rural/Precos";
 import { Produto } from "@/components/rural/Produto";
 import { ProvaVisual } from "@/components/rural/ProvaVisual";
+import { ScratchExperiment } from "@/components/rural/ScratchExperiment";
 
 const TITULO = "Rural Planner — +100 Projetos de Sítios e Chácaras Produtivas";
 const DESCRICAO =
@@ -54,6 +55,7 @@ function Index() {
       <Faq />
       <Rodape />
       <NotificacaoCompras />
+      <ScratchExperiment />
     </main>
   );
 }

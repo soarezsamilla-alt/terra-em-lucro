@@ -225,3 +225,38 @@
   }
 }
 
+/* Tokens e animação isolados da raspadinha promocional. */
+:root {
+  --scratch-gold: oklch(0.67 0.12 78);
+  --scratch-gold-light: oklch(0.84 0.11 88);
+  --scratch-gold-soft: oklch(0.91 0.06 88);
+}
+
+@theme inline {
+  --color-scratch-gold: var(--scratch-gold);
+  --color-scratch-gold-light: var(--scratch-gold-light);
+  --color-scratch-gold-soft: var(--scratch-gold-soft);
+}
+
+@keyframes scratch-shine {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--scratch-gold) 0%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 24px 4px color-mix(in oklch, var(--scratch-gold) 42%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--scratch-gold) 0%, transparent);
+  }
+}
+
+@utility animate-scratch-shine {
+  animation: scratch-shine 700ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-scratch-shine,
+  .animate-fade-in {
+    animation: none;
+  }
+}
