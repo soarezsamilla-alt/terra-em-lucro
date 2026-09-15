@@ -7,7 +7,6 @@ import {
 import {
   DISCOUNTED_COMPLETE_CHECKOUT_URL,
   isDiscountCheckoutConfigured,
-  popupDelaySeconds,
   scratchPopupEnabled,
   SCRATCH_PREVIEW_QUERY,
   scrollTriggerPercentage,
@@ -53,7 +52,6 @@ export function ScratchExperiment() {
       shown = true;
       setOpen(true);
       window.removeEventListener("scroll", handleScroll);
-      window.clearTimeout(delayId);
     };
     const handleScroll = () => {
       const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -69,16 +67,15 @@ export function ScratchExperiment() {
       setOpen(false);
       saveScratchInteraction();
       window.removeEventListener("scroll", handleScroll);
-      window.clearTimeout(delayId);
     };
 
-    const delayId = window.setTimeout(show, previewForced ? 800 : popupDelaySeconds * 1000);
+    const previewDelayId = previewForced ? window.setTimeout(show, 800) : undefined;
     window.addEventListener("scroll", handleScroll, { passive: true });
     document.addEventListener("click", handleCheckoutClick, true);
     handleScroll();
 
     return () => {
-      window.clearTimeout(delayId);
+      if (previewDelayId !== undefined) window.clearTimeout(previewDelayId);
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("click", handleCheckoutClick, true);
     };
