@@ -5,6 +5,8 @@ import {
   CHECKOUT_UPSELL_URL,
 } from "@/lib/rural-config";
 import {
+  DISCOUNTED_COMPLETE_CHECKOUT_URL,
+  isDiscountCheckoutConfigured,
   popupDelaySeconds,
   scratchPopupEnabled,
   SCRATCH_PREVIEW_QUERY,
@@ -26,6 +28,7 @@ const CHECKOUT_URLS = new Set([
   CHECKOUT_COMPLETO_URL,
   CHECKOUT_UPSELL_URL,
   CHECKOUT_UPSELL_RECUSA_URL,
+  ...(isDiscountCheckoutConfigured ? [DISCOUNTED_COMPLETE_CHECKOUT_URL] : []),
 ]);
 
 export function ScratchExperiment() {
@@ -37,6 +40,7 @@ export function ScratchExperiment() {
 
     const previewForced =
       new URLSearchParams(window.location.search).get(SCRATCH_PREVIEW_QUERY) === "1";
+    if (!isDiscountCheckoutConfigured && !previewForced) return;
     const assignedVariant = previewForced ? "scratch_discount" : getOrAssignScratchVariant();
     setVariant(assignedVariant);
     trackScratchEvent("rp_scratch_eligible", assignedVariant);
