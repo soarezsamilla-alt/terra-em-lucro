@@ -1,7 +1,7 @@
 import heroMockup from "@/assets/hero-mockup.webp";
 import { Button } from "@/components/ui/button";
 import { PRECOS } from "@/lib/rural-config";
-import { FileText, MessageCircle, ShieldCheck, Users } from "lucide-react";
+import { MessageCircle, ShieldCheck, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 
 /** Data calculada apenas no cliente para evitar divergência de fuso entre SSR e browser. */
@@ -103,24 +103,13 @@ export function Hero() {
           </h1>
 
 
-          <div className="relative mx-auto mt-7 w-full max-w-xl">
-            <img
-              src={heroMockup}
-              alt="Mockup do kit digital Rural Planner com projetos de sítios e chácaras"
-              width={1536}
-              height={1024}
-              className="w-full animate-soft-pulse"
-            />
-            <div
-              className="absolute bottom-[13%] right-[3%] z-10 flex items-center gap-1.5 rounded-md border border-accent-foreground/20 bg-accent px-2.5 py-1.5 text-accent-foreground shadow-lg sm:bottom-[14%] sm:right-[5%] sm:px-3 sm:py-2"
-              aria-label="Produto entregue em PDF digital"
-            >
-              <FileText className="size-3.5 shrink-0 sm:size-4" aria-hidden />
-              <span className="font-display text-[9px] font-black uppercase leading-none tracking-wide sm:text-[10px]">
-                PDF Digital
-              </span>
-            </div>
-          </div>
+          <img
+            src={heroMockup}
+            alt="Mockup do kit digital Rural Planner com projetos de sítios e chácaras"
+            width={1536}
+            height={1024}
+            className="animate-soft-pulse mx-auto mt-7 w-full max-w-xl"
+          />
 
           <p className="mx-auto mt-5 max-w-2xl text-sm text-muted-foreground sm:text-base">
             A maior biblioteca de plantas de sítios do Brasil com +100 projetos profissionais com
