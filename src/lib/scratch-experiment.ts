@@ -37,6 +37,7 @@ function readStoredVariant(now: number): StoredVariant | null {
       typeof value.assignedAt === "number" &&
       now - value.assignedAt < repeatAfterDays * DAY_MS
     ) {
+      if (experimentTrafficPercentage === 100 && value.variant === "control") return null;
       return { variant: value.variant, assignedAt: value.assignedAt };
     }
   } catch {

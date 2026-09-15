@@ -54,9 +54,10 @@ export function ScratchExperiment() {
       window.removeEventListener("scroll", handleScroll);
     };
     const handleScroll = () => {
-      const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
-      if (scrollableHeight <= 0) return;
-      if ((window.scrollY / scrollableHeight) * 100 >= scrollTriggerPercentage) show();
+      const pageHeight = document.documentElement.scrollHeight;
+      if (pageHeight <= 0) return;
+      const viewedPagePercentage = ((window.scrollY + window.innerHeight) / pageHeight) * 100;
+      if (viewedPagePercentage >= scrollTriggerPercentage) show();
     };
     const handleCheckoutClick = (event: MouseEvent) => {
       const target = event.target;
