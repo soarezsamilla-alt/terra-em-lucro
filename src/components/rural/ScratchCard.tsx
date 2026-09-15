@@ -89,7 +89,12 @@ export function ScratchCard({ revealed, onStart, onReveal }: ScratchCardProps) {
 
   return (
     <div className="text-center">
-      <div className={cn("relative h-36 overflow-hidden rounded-lg border border-scratch-gold bg-primary/5", revealed && "animate-scratch-shine")}> 
+      <div
+        className={cn(
+          "relative h-36 overflow-hidden rounded-lg border border-scratch-gold bg-primary/5",
+          revealed && "animate-scratch-shine",
+        )}
+      >
         <div className="absolute inset-0 grid place-items-center px-5">
           <p className="font-display text-2xl font-extrabold text-primary">R$ 5 DE DESCONTO</p>
         </div>
@@ -97,22 +102,34 @@ export function ScratchCard({ revealed, onStart, onReveal }: ScratchCardProps) {
           <canvas
             ref={canvasRef}
             aria-label="Área para raspar e revelar o presente"
-            className={cn("absolute inset-0 size-full touch-none cursor-crosshair transition-opacity duration-500", ready ? "opacity-100" : "opacity-0")}
+            className={cn(
+              "absolute inset-0 size-full touch-none cursor-crosshair transition-opacity duration-500",
+              ready ? "opacity-100" : "opacity-0",
+            )}
             onPointerDown={(event) => {
               drawingRef.current = true;
               event.currentTarget.setPointerCapture(event.pointerId);
               scratch(event);
             }}
             onPointerMove={scratch}
-            onPointerUp={() => { drawingRef.current = false; }}
-            onPointerCancel={() => { drawingRef.current = false; }}
+            onPointerUp={() => {
+              drawingRef.current = false;
+            }}
+            onPointerCancel={() => {
+              drawingRef.current = false;
+            }}
           />
         ) : null}
       </div>
       {!revealed ? (
         <>
           <p className="mt-2 text-xs text-muted-foreground">Toque e deslize o dedo para revelar.</p>
-          <Button variant="link" size="sm" className="mt-1 h-auto whitespace-normal px-1 py-1 text-xs" onClick={onReveal}>
+          <Button
+            variant="link"
+            size="sm"
+            className="mt-1 h-auto whitespace-normal px-1 py-1 text-xs"
+            onClick={onReveal}
+          >
             Não consigo raspar — revelar meu presente
           </Button>
         </>

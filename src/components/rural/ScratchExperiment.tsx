@@ -35,7 +35,8 @@ export function ScratchExperiment() {
   useEffect(() => {
     if (!scratchPopupEnabled || window.location.pathname !== "/") return;
 
-    const previewForced = new URLSearchParams(window.location.search).get(SCRATCH_PREVIEW_QUERY) === "1";
+    const previewForced =
+      new URLSearchParams(window.location.search).get(SCRATCH_PREVIEW_QUERY) === "1";
     const assignedVariant = previewForced ? "scratch_discount" : getOrAssignScratchVariant();
     setVariant(assignedVariant);
     trackScratchEvent("rp_scratch_eligible", assignedVariant);

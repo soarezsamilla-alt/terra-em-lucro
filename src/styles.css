@@ -225,7 +225,6 @@
   }
 }
 
-
 /* Tokens e animação isolados da raspadinha promocional. */
 :root {
   --scratch-gold: oklch(0.67 0.12 78);
@@ -240,9 +239,15 @@
 }
 
 @keyframes scratch-shine {
-  0% { box-shadow: 0 0 0 0 color-mix(in oklch, var(--scratch-gold) 0%, transparent); }
-  50% { box-shadow: 0 0 24px 4px color-mix(in oklch, var(--scratch-gold) 42%, transparent); }
-  100% { box-shadow: 0 0 0 0 color-mix(in oklch, var(--scratch-gold) 0%, transparent); }
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--scratch-gold) 0%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 24px 4px color-mix(in oklch, var(--scratch-gold) 42%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklch, var(--scratch-gold) 0%, transparent);
+  }
 }
 
 @utility animate-scratch-shine {

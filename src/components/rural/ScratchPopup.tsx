@@ -70,7 +70,12 @@ export function ScratchPopup({ open, variant, onDismiss }: ScratchPopupProps) {
   };
 
   return (
-    <Dialog open={open} onOpenChange={(nextOpen) => { if (!nextOpen) close(); }}>
+    <Dialog
+      open={open}
+      onOpenChange={(nextOpen) => {
+        if (!nextOpen) close();
+      }}
+    >
       <DialogContent
         aria-describedby="scratch-popup-description"
         className="max-h-[80vh] w-[90vw] max-w-[430px] gap-0 overflow-y-auto rounded-xl border-scratch-gold bg-cream p-5 text-center shadow-card sm:p-6 [&>button]:right-3 [&>button]:top-3 [&>button]:grid [&>button]:size-10 [&>button]:place-items-center [&>button_svg]:size-6"
@@ -82,7 +87,10 @@ export function ScratchPopup({ open, variant, onDismiss }: ScratchPopupProps) {
           <DialogTitle className="px-7 text-center font-display text-xl font-extrabold leading-tight text-earth">
             {revealed ? "Você ganhou R$5 de desconto!" : "VOCÊ DESBLOQUEOU UM PRESENTE"}
           </DialogTitle>
-          <DialogDescription id="scratch-popup-description" className="text-center text-xs leading-relaxed text-muted-foreground sm:text-sm">
+          <DialogDescription
+            id="scratch-popup-description"
+            className="text-center text-xs leading-relaxed text-muted-foreground sm:text-sm"
+          >
             {revealed
               ? "Aproveite o Rural Planner Completo com mais de 100 projetos prontos para planejar sua propriedade."
               : "Raspe o cartão abaixo e revele sua condição especial para acessar o Rural Planner."}
@@ -125,8 +133,12 @@ export function ScratchPopup({ open, variant, onDismiss }: ScratchPopupProps) {
         </div>
 
         {!isDiscountCheckoutConfigured ? (
-          <div role="status" className="mt-4 rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-left text-[11px] leading-relaxed text-destructive">
-            Prévia: falta configurar o checkout real de R$24,90. O botão permanecerá bloqueado e esta versão não deve ser publicada.
+          <div
+            role="status"
+            className="mt-4 rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-left text-[11px] leading-relaxed text-destructive"
+          >
+            Prévia: falta configurar o checkout real de R$24,90. O botão permanecerá bloqueado e
+            esta versão não deve ser publicada.
           </div>
         ) : null}
       </DialogContent>

@@ -7,8 +7,7 @@ export const originalPrice = 29.9;
 export const discountedPrice = 24.9;
 export const discountAmount = 5;
 
-export const DISCOUNTED_COMPLETE_CHECKOUT_URL =
-  "COLE_AQUI_O_LINK_REAL_DO_CHECKOUT_COM_DESCONTO";
+export const DISCOUNTED_COMPLETE_CHECKOUT_URL = "COLE_AQUI_O_LINK_REAL_DO_CHECKOUT_COM_DESCONTO";
 
 export const SCRATCH_EXPERIMENT_NAME = "rural_planner_scratch_v1";
 export const SCRATCH_VARIANT_KEY = "rp_scratch_variant";
