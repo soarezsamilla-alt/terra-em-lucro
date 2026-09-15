@@ -12,6 +12,7 @@ import am01 from "@/assets/amostras/am-01.webp";
 import am02 from "@/assets/amostras/am-02.webp";
 import am03 from "@/assets/amostras/am-03.webp";
 import am04 from "@/assets/amostras/am-04.webp";
+import am05 from "@/assets/amostras/am-05.webp";
 import am06 from "@/assets/amostras/am-06.webp";
 import am07 from "@/assets/amostras/am-07.webp";
 import am08 from "@/assets/amostras/am-08.webp";
@@ -36,6 +37,7 @@ const AMOSTRAS: readonly string[] = [
   am02,
   am03,
   am04,
+  am05,
   am06,
   am07,
   am08,
