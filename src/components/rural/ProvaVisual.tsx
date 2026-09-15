@@ -27,6 +27,11 @@ import am16 from "@/assets/amostras/am-16.webp";
 import am17 from "@/assets/amostras/am-17.webp";
 import am18 from "@/assets/amostras/am-18.webp";
 import am19 from "@/assets/amostras/am-19.webp";
+import am20 from "@/assets/amostras/am-20.webp";
+import am21 from "@/assets/amostras/am-21.webp";
+import am22 from "@/assets/amostras/am-22.webp";
+import am23 from "@/assets/amostras/am-23.webp";
+import am24 from "@/assets/amostras/am-24.webp";
 
 const AMOSTRAS: readonly string[] = [
   am01,
@@ -48,6 +53,11 @@ const AMOSTRAS: readonly string[] = [
   am17,
   am18,
   am19,
+  am20,
+  am21,
+  am22,
+  am23,
+  am24,
 ];
 
 export interface ProvaVisualProps {
