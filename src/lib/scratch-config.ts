@@ -1,5 +1,5 @@
 export const scratchPopupEnabled = true;
-export const experimentTrafficPercentage = 50;
+export const experimentTrafficPercentage = 100;
 export const popupDelaySeconds = 12;
 export const scrollTriggerPercentage = 50;
 export const repeatAfterDays = 7;
