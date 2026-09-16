@@ -1,7 +1,7 @@
 import heroMockup from "@/assets/hero-mockup.webp";
 import { Button } from "@/components/ui/button";
 import { PRECOS } from "@/lib/rural-config";
-import { ChevronRight, MessageCircle, ShieldCheck, Users } from "lucide-react";
+import { ChevronRight, Mail, MessageCircle, ShieldCheck, Users } from "lucide-react";
 import { useEffect, useState } from "react";
 
 /** Data calculada apenas no cliente para evitar divergência de fuso entre SSR e browser. */
@@ -132,10 +132,28 @@ export function Hero() {
           </p>
 
 
-          <p className="mt-4 flex items-center justify-center gap-1.5 text-xs font-semibold text-primary">
-            <MessageCircle className="size-3.5 shrink-0" aria-hidden />
-            Receba tudo na hora no seu WhatsApp e e-mail
-          </p>
+          <div className="group relative mx-auto mt-4 inline-flex items-center gap-3 rounded-full border border-primary/20 bg-card py-1.5 pl-1.5 pr-4 text-left shadow-card transition-all duration-300 hover:border-primary/40 hover:-translate-y-0.5">
+            <div className="flex shrink-0 items-center" aria-hidden>
+              <span className="relative z-10 flex size-8 items-center justify-center rounded-full border-2 border-card bg-primary text-primary-foreground shadow-sm">
+                <MessageCircle className="size-4" />
+              </span>
+              <span className="-ml-2 flex size-8 items-center justify-center rounded-full border-2 border-card bg-earth text-earth-foreground shadow-sm">
+                <Mail className="size-3.5" />
+              </span>
+            </div>
+            <div>
+              <p className="flex items-center gap-1.5 font-display text-[10px] font-extrabold uppercase tracking-wide text-foreground">
+                Entrega imediata
+                <span className="relative flex size-1.5" aria-hidden>
+                  <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-60" />
+                  <span className="relative inline-flex size-1.5 rounded-full bg-primary" />
+                </span>
+              </p>
+              <p className="text-[10px] font-medium text-muted-foreground sm:text-xs">
+                Receba tudo na hora no seu WhatsApp e e-mail
+              </p>
+            </div>
+          </div>
 
           <Button asChild variant="cta" size="xl" className="mt-6 h-10 w-full max-w-xs animate-cta-pulse px-4 text-xs sm:text-sm">
             <a href="#plano-completo">{PRECOS.ctaPrincipal}</a>
