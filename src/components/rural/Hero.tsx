@@ -90,20 +90,20 @@ export function Hero() {
       <header className="bg-gradient-to-b from-secondary to-background px-4 pb-10 pt-8">
         <div className="mx-auto max-w-3xl text-center">
           {/* 2. Selo de urgência */}
-          <p className="group inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 shadow-sm transition-transform duration-300 hover:scale-[1.03]">
-            <span className="relative flex size-2 shrink-0" aria-hidden>
+          <p className="group inline-flex items-center gap-1.5 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 shadow-sm transition-transform duration-300 hover:scale-[1.03]">
+            <span className="relative flex size-1.5 shrink-0" aria-hidden>
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-accent opacity-60" />
-              <span className="relative inline-flex size-2 rounded-full bg-accent" />
+              <span className="relative inline-flex size-1.5 rounded-full bg-accent" />
             </span>
-            <span className="text-[10px] font-extrabold uppercase tracking-widest text-accent">
+            <span className="text-[9px] font-extrabold uppercase tracking-widest text-accent">
               Oferta exclusiva
             </span>
-            <span className="h-3 w-px bg-accent/30" aria-hidden />
-            <span className="text-xs font-semibold text-foreground">
+            <span className="h-2.5 w-px bg-accent/30" aria-hidden />
+            <span className="text-[10px] font-semibold text-foreground">
               Válida até <strong className="font-extrabold text-accent">{dataOferta}</strong>
             </span>
             <ChevronRight
-              className="size-3 shrink-0 text-accent/60 transition-colors group-hover:text-accent"
+              className="size-2.5 shrink-0 text-accent/60 transition-colors group-hover:text-accent"
               aria-hidden
             />
           </p>
