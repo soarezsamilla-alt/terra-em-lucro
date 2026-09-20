@@ -28,7 +28,7 @@ export const PRECOS = {
   completoDe: "R$197,90",
   completoPor: "R$29,90",
   ctaPrincipal: "QUERO MEU PROJETO POR R$ 9,90",
-  bonusTotal: "R$205,50",
+  bonusTotal: "R$207,40",
   /** Preço promocional do upsell exibido ao clicar no Plano Básico. */
   upsellPor: "R$19,90",
 } as const;
