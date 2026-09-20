@@ -1,5 +1,5 @@
 import { useState } from "react";
-import basicoMockup from "@/assets/plano-basico-mockup.webp";
+import basicoMockup from "@/assets/plano-basico-rural-planner.png.asset.json";
 import planoCompletoMockup from "@/assets/hero-mockup-rural-planner.png.asset.json";
 import { Button } from "@/components/ui/button";
 import { Contador } from "@/components/rural/Contador";
@@ -52,7 +52,7 @@ export function Precos() {
               <p className="text-xs text-muted-foreground">pagamento único</p>
             </div>
             <img
-              src={basicoMockup}
+              src={basicoMockup.url}
               alt="Mockup do Plano Básico Rural Planner"
               width={1536}
               height={1024}
