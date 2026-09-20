@@ -1,4 +1,4 @@
-import heroMockup from "@/assets/hero-mockup-rural-planner.png.asset.json";
+import heroMockup from "@/assets/hero-mockup-rural-planner.webp";
 import { Button } from "@/components/ui/button";
 import { PRECOS } from "@/lib/rural-config";
 import { ChevronRight, MessageCircle, ShieldCheck, Users } from "lucide-react";
@@ -118,7 +118,7 @@ export function Hero() {
 
 
           <img
-            src={heroMockup.url}
+            src={heroMockup}
             alt="Mockup do kit digital Rural Planner com projetos de sítios e chácaras"
             width={1536}
             height={1024}

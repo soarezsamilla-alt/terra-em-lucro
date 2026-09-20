@@ -1,6 +1,6 @@
 import { useState } from "react";
-import basicoMockup from "@/assets/plano-basico-rural-planner.png.asset.json";
-import planoCompletoMockup from "@/assets/hero-mockup-rural-planner.png.asset.json";
+import basicoMockup from "@/assets/plano-basico-rural-planner.webp";
+import planoCompletoMockup from "@/assets/hero-mockup-rural-planner.webp";
 import { Button } from "@/components/ui/button";
 import { Contador } from "@/components/rural/Contador";
 import { UpsellDialog } from "@/components/rural/UpsellDialog";
@@ -52,7 +52,7 @@ export function Precos() {
               <p className="text-xs text-muted-foreground">pagamento único</p>
             </div>
             <img
-              src={basicoMockup.url}
+              src={basicoMockup}
               alt="Mockup do Plano Básico Rural Planner"
               width={1536}
               height={1024}
@@ -99,7 +99,7 @@ export function Precos() {
               </p>
             </div>
             <img
-              src={planoCompletoMockup.url}
+              src={planoCompletoMockup}
               alt="Mockup do Plano Completo Rural Planner com todos os bônus"
               width={1536}
               height={1024}
